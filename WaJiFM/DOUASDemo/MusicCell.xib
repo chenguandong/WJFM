@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="106" id="KGk-i7-Jjw" customClass="MusicCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FkF-Mc-GUs">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="e5s-ih-nu8"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eo4-Ib-aMC">
+                        <rect key="frame" x="105" y="5" width="164" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="183" translatesAutoresizingMaskIntoConstraints="NO" id="c87-qh-NnL">
+                        <rect key="frame" x="105" y="36" width="183" height="69"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rrv-S0-LGg">
+                        <rect key="frame" x="275" y="55" width="45" height="45"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="gFp-rz-Ke9"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="download.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZf-hm-asY">
+                        <rect key="frame" x="277" y="0.0" width="45" height="45"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="GSF-JE-F3b"/>
+                            <constraint firstAttribute="height" constant="45" id="K5T-KO-fLD"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="ic_player_fav_selected_highlight.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Rrv-S0-LGg" firstAttribute="top" secondItem="IZf-hm-asY" secondAttribute="bottom" constant="10" id="13d-ti-p6t"/>
+                    <constraint firstItem="Eo4-Ib-aMC" firstAttribute="top" secondItem="IZf-hm-asY" secondAttribute="top" constant="5" id="3ou-Rh-q4W"/>
+                    <constraint firstItem="Eo4-Ib-aMC" firstAttribute="leading" secondItem="c87-qh-NnL" secondAttribute="leading" id="8lj-cb-73p"/>
+                    <constraint firstItem="c87-qh-NnL" firstAttribute="bottom" secondItem="Rrv-S0-LGg" secondAttribute="bottom" constant="5" id="9dj-Od-XJV"/>
+                    <constraint firstAttribute="trailing" secondItem="c87-qh-NnL" secondAttribute="trailing" constant="32" id="DOE-hK-uSi"/>
+                    <constraint firstAttribute="trailing" secondItem="IZf-hm-asY" secondAttribute="trailing" constant="-2" id="Icy-nb-gkM"/>
+                    <constraint firstItem="c87-qh-NnL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="36" id="JVm-aB-bcb"/>
+                    <constraint firstItem="Eo4-Ib-aMC" firstAttribute="leading" secondItem="FkF-Mc-GUs" secondAttribute="trailing" constant="5" id="K1s-md-SXX"/>
+                    <constraint firstItem="FkF-Mc-GUs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="MVY-7D-eVo"/>
+                    <constraint firstAttribute="bottom" secondItem="FkF-Mc-GUs" secondAttribute="bottom" constant="-1" id="QKl-rN-pKn"/>
+                    <constraint firstItem="IZf-hm-asY" firstAttribute="leading" secondItem="Eo4-Ib-aMC" secondAttribute="trailing" constant="8" id="T6L-gU-d5L"/>
+                    <constraint firstAttribute="trailing" secondItem="Rrv-S0-LGg" secondAttribute="trailing" id="Teb-c8-PAJ"/>
+                    <constraint firstAttribute="bottom" secondItem="Eo4-Ib-aMC" secondAttribute="bottom" constant="62" id="ZS2-xS-Wbi"/>
+                    <constraint firstAttribute="bottom" secondItem="c87-qh-NnL" secondAttribute="bottom" constant="-6" id="kDe-Sb-c1b"/>
+                    <constraint firstItem="Eo4-Ib-aMC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="lWy-dL-6F1"/>
+                    <constraint firstItem="FkF-Mc-GUs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="wRz-H2-8E4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="musicDownloadButton" destination="Rrv-S0-LGg" id="EsL-b4-dW6"/>
+                <outlet property="musicImg" destination="FkF-Mc-GUs" id="sfN-yq-2u0"/>
+                <outlet property="musicLove" destination="IZf-hm-asY" id="kUl-Kx-qqg"/>
+                <outlet property="musicSubTitle" destination="c87-qh-NnL" id="GcY-yV-NtJ"/>
+                <outlet property="musicTitle" destination="Eo4-Ib-aMC" id="9eL-HL-4uV"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="download.png" width="72" height="72"/>
+        <image name="ic_player_fav_selected_highlight.png" width="96" height="72"/>
+    </resources>
+</document>

@@ -1,0 +1,1108 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		181B9744193D80E100CEDE91 /* MusicTableViewMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B9742193D80E100CEDE91 /* MusicTableViewMenuController.m */; };
+		181B9745193D80E100CEDE91 /* MusicTableViewMenuController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 181B9743193D80E100CEDE91 /* MusicTableViewMenuController.xib */; };
+		181B974D193D8FC200CEDE91 /* IISideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B9748193D8FC200CEDE91 /* IISideController.m */; };
+		181B974E193D8FC200CEDE91 /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B974A193D8FC200CEDE91 /* IIViewDeckController.m */; };
+		181B974F193D8FC200CEDE91 /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B974C193D8FC200CEDE91 /* IIWrapController.m */; };
+		181B976E193D935100CEDE91 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 181B976D193D935100CEDE91 /* SystemConfiguration.framework */; };
+		181B977A193D950600CEDE91 /* HttpTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B9777193D950600CEDE91 /* HttpTools.m */; };
+		181B977B193D950600CEDE91 /* JsonTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B9779193D950600CEDE91 /* JsonTools.m */; };
+		181B977E193DB5E000CEDE91 /* MusicMenuBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B977D193DB5E000CEDE91 /* MusicMenuBean.m */; };
+		181B9781193DB6FE00CEDE91 /* MusicMenuAllBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B9780193DB6FE00CEDE91 /* MusicMenuAllBean.m */; };
+		18394C7A19471B320091A3B3 /* DownLoadedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18394C7819471B320091A3B3 /* DownLoadedViewController.m */; };
+		18394C7B19471B320091A3B3 /* DownLoadedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18394C7919471B320091A3B3 /* DownLoadedViewController.xib */; };
+		183984EF1937181500B43B24 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 183984EE1937181500B43B24 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		183984F319371DBD00B43B24 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 183984F01937186A00B43B24 /* libxml2.dylib */; };
+		183984F7193720CB00B43B24 /* XMLBrodCast.m in Sources */ = {isa = PBXBuildFile; fileRef = 183984F6193720CB00B43B24 /* XMLBrodCast.m */; };
+		183984FA193721EA00B43B24 /* XMLBrodCastItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 183984F9193721EA00B43B24 /* XMLBrodCastItem.m */; };
+		183984FE193723B300B43B24 /* XMLTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 183984FD193723B300B43B24 /* XMLTools.m */; };
+		1856B2791946A1BA0013CDB2 /* DownLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1856B2771946A1BA0013CDB2 /* DownLoadViewController.m */; };
+		1856B27A1946A1BA0013CDB2 /* DownLoadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1856B2781946A1BA0013CDB2 /* DownLoadViewController.xib */; };
+		1856B2831946F6090013CDB2 /* StringTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1856B2821946F6090013CDB2 /* StringTools.m */; };
+		185EE34319455EA7006EB1CD /* DownLoadTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 185EE34219455EA7006EB1CD /* DownLoadTools.m */; };
+		185EE34D1945AF36006EB1CD /* DownLoadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 185EE34B1945AF36006EB1CD /* DownLoadTableViewCell.m */; };
+		185EE34E1945AF36006EB1CD /* DownLoadTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185EE34C1945AF36006EB1CD /* DownLoadTableViewCell.xib */; };
+		188A0757194D3832005BC00F /* FavouriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188A0755194D3832005BC00F /* FavouriteViewController.m */; };
+		188A0758194D3832005BC00F /* FavouriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188A0756194D3832005BC00F /* FavouriteViewController.xib */; };
+		188A075A194D61CC005BC00F /* like_enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 188A0759194D61CC005BC00F /* like_enabled.png */; };
+		188A075E194D7193005BC00F /* FavouriteTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188A075C194D7193005BC00F /* FavouriteTableViewController.m */; };
+		188A075F194D7193005BC00F /* FavouriteTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188A075D194D7193005BC00F /* FavouriteTableViewController.xib */; };
+		188A0763194D73F5005BC00F /* FavouriteAlbumTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188A0761194D73F5005BC00F /* FavouriteAlbumTableViewController.m */; };
+		188A0764194D73F5005BC00F /* FavouriteAlbumTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188A0762194D73F5005BC00F /* FavouriteAlbumTableViewController.xib */; };
+		18B21455193EC50B00BD9CBE /* ChannelTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B21453193EC50B00BD9CBE /* ChannelTableViewController.m */; };
+		18B21456193EC50B00BD9CBE /* ChannelTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B21454193EC50B00BD9CBE /* ChannelTableViewController.xib */; };
+		18B21458193ECD8C00BD9CBE /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B21457193ECD8C00BD9CBE /* placeholder.png */; };
+		18C701321947FFC200A14D4F /* MusicPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C701301947FFC200A14D4F /* MusicPlayViewController.m */; };
+		18C701331947FFC200A14D4F /* MusicPlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C701311947FFC200A14D4F /* MusicPlayViewController.xib */; };
+		18C7014219485D1B00A14D4F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C7014119485D1A00A14D4F /* MainViewController.xib */; };
+		18CFB989194A9A8600ADC133 /* SettingMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CFB987194A9A8600ADC133 /* SettingMenuViewController.m */; };
+		18CFB98A194A9A8600ADC133 /* SettingMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CFB988194A9A8600ADC133 /* SettingMenuViewController.xib */; };
+		18CFB98E194AA0CB00ADC133 /* SettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CFB98C194AA0CB00ADC133 /* SettingTableViewCell.m */; };
+		18CFB98F194AA0CB00ADC133 /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CFB98D194AA0CB00ADC133 /* SettingTableViewCell.xib */; };
+		18CFB992194AAA0D00ADC133 /* SettingBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CFB991194AAA0D00ADC133 /* SettingBean.m */; };
+		18CFB996194AE65000ADC133 /* AlbumCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CFB994194AE65000ADC133 /* AlbumCellTableViewCell.m */; };
+		18CFB997194AE65000ADC133 /* AlbumCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CFB995194AE65000ADC133 /* AlbumCellTableViewCell.xib */; };
+		18CFB999194AEAAE00ADC133 /* RSS.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CFB998194AEAAE00ADC133 /* RSS.png */; };
+		18CFB99D194AEEA700ADC133 /* MusicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CFB99B194AEEA700ADC133 /* MusicCell.m */; };
+		18CFB99E194AEEA700ADC133 /* MusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18CFB99C194AEEA700ADC133 /* MusicCell.xib */; };
+		18CFB9A0194AF04E00ADC133 /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CFB99F194AF04E00ADC133 /* download.png */; };
+		18CFB9A7194AF10D00ADC133 /* ic_player_fav_disable.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CFB9A5194AF10D00ADC133 /* ic_player_fav_disable.png */; };
+		18CFB9A8194AF10D00ADC133 /* ic_player_fav_selected_highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CFB9A6194AF10D00ADC133 /* ic_player_fav_selected_highlight.png */; };
+		18EDEF7B194991DD00DF1B34 /* play_ctrl_pause_prs.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EDEF77194991DD00DF1B34 /* play_ctrl_pause_prs.png */; };
+		18EDEF7C194991DD00DF1B34 /* play_ctrl_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EDEF78194991DD00DF1B34 /* play_ctrl_pause.png */; };
+		18EDEF7D194991DD00DF1B34 /* play_ctrl_play_prs.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EDEF79194991DD00DF1B34 /* play_ctrl_play_prs.png */; };
+		18EDEF7E194991DD00DF1B34 /* play_ctrl_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EDEF7A194991DD00DF1B34 /* play_ctrl_play.png */; };
+		18EDEF831949929B00DF1B34 /* play_btn_next_prs.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EDEF7F1949929B00DF1B34 /* play_btn_next_prs.png */; };
+		18EDEF841949929B00DF1B34 /* play_btn_next.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EDEF801949929B00DF1B34 /* play_btn_next.png */; };
+		18EDEF851949929B00DF1B34 /* play_btn_prev_prs.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EDEF811949929B00DF1B34 /* play_btn_prev_prs.png */; };
+		18EDEF861949929B00DF1B34 /* play_btn_prev.png in Resources */ = {isa = PBXBuildFile; fileRef = 18EDEF821949929B00DF1B34 /* play_btn_prev.png */; };
+		18EDEF881949A75B00DF1B34 /* default_album_sml.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18EDEF871949A75B00DF1B34 /* default_album_sml.jpg */; };
+		18EDEF8A1949B1C800DF1B34 /* default_album_mid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18EDEF891949B1C800DF1B34 /* default_album_mid.jpg */; };
+		18F978BD1942BF25006900E1 /* NSFileManager+TCBlobDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F978B11942BF25006900E1 /* NSFileManager+TCBlobDownload.m */; };
+		18F978BE1942BF25006900E1 /* UIDevice-Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F978B31942BF25006900E1 /* UIDevice-Hardware.m */; };
+		18F978BF1942BF25006900E1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18F978B41942BF25006900E1 /* Localizable.strings */; };
+		18F978C01942BF25006900E1 /* TCBlobDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F978BA1942BF25006900E1 /* TCBlobDownloader.m */; };
+		18F978C11942BF25006900E1 /* TCBlobDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F978BC1942BF25006900E1 /* TCBlobDownloadManager.m */; };
+		18F978C519430B97006900E1 /* DownloadTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F978C319430B97006900E1 /* DownloadTableViewController.m */; };
+		18F978C619430B97006900E1 /* DownloadTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F978C419430B97006900E1 /* DownloadTableViewController.xib */; };
+		18F978D819431466006900E1 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F978D719431466006900E1 /* libsqlite3.dylib */; };
+		18F978FF19432710006900E1 /* NoteBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F978FC19432710006900E1 /* NoteBean.m */; };
+		18F9790019432710006900E1 /* SqlTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F978FE19432710006900E1 /* SqlTools.m */; };
+		38D84B47C665480880976B3C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0481F08ACF284CE2B04FBE1A /* libPods.a */; };
+		D400E947171BF13F00BE7F37 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D400E946171BF13F00BE7F37 /* Accelerate.framework */; };
+		D42DA81017865EE4007276E5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42DA80F17865EE4007276E5 /* QuartzCore.framework */; };
+		D42DA81217865EE9007276E5 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42DA81117865EE9007276E5 /* OpenGLES.framework */; };
+		D4632A6F17AE27E30065ECDE /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4632A6E17AE27E30065ECDE /* MobileCoreServices.framework */; };
+		D4C38923171B9D87009D6124 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C38922171B9D87009D6124 /* UIKit.framework */; };
+		D4C38925171B9D87009D6124 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C38924171B9D87009D6124 /* Foundation.framework */; };
+		D4C38927171B9D87009D6124 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C38926171B9D87009D6124 /* CoreGraphics.framework */; };
+		D4C3892D171B9D87009D6124 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4C3892B171B9D87009D6124 /* InfoPlist.strings */; };
+		D4C3892F171B9D87009D6124 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C3892E171B9D87009D6124 /* main.m */; };
+		D4C38933171B9D87009D6124 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C38932171B9D87009D6124 /* AppDelegate.m */; };
+		D4C38935171B9D87009D6124 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D4C38934171B9D87009D6124 /* Default.png */; };
+		D4C38937171B9D87009D6124 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4C38936171B9D87009D6124 /* Default@2x.png */; };
+		D4C38939171B9D87009D6124 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4C38938171B9D87009D6124 /* Default-568h@2x.png */; };
+		D4C38948171B9E36009D6124 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C38947171B9E36009D6124 /* AudioToolbox.framework */; };
+		D4C3894A171B9E3A009D6124 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C38949171B9E3A009D6124 /* CoreAudio.framework */; };
+		D4C3894C171B9E3D009D6124 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C3894B171B9E3D009D6124 /* CFNetwork.framework */; };
+		D4F5B28D18A5F0C70063865C /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F5B28C18A5F0C70063865C /* Track.m */; };
+		D4F5B29018A5F1B70063865C /* Track+Provider.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F5B28F18A5F1B70063865C /* Track+Provider.m */; };
+		D4F5B29318A5F3030063865C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F5B29218A5F3030063865C /* MainViewController.m */; };
+		D4F5B29618A5F6B90063865C /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4F5B29518A5F6B90063865C /* PlayerViewController.m */; };
+		D4F5B29818A605A70063865C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F5B29718A605A70063865C /* AVFoundation.framework */; };
+		D4F5B29A18A605AB0063865C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F5B29918A605AB0063865C /* MediaPlayer.framework */; };
+		DA8CB0DE19AB424300968D7A /* HistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8CB0DC19AB424300968D7A /* HistoryTableViewController.m */; };
+		DA8CB0DF19AB424300968D7A /* HistoryTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA8CB0DD19AB424300968D7A /* HistoryTableViewController.xib */; };
+		DAAAB4B919AD8AEB00288B09 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAAB4B819AD8AEB00288B09 /* Icon@2x.png */; };
+		DAAAB4BB19AD8B3E00288B09 /* Icon-smail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAAB4BA19AD8B3E00288B09 /* Icon-smail@2x.png */; };
+		DAAAB4BD19AD8B6400288B09 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAAB4BC19AD8B6400288B09 /* Icon.png */; };
+		DAAAB4BF19AD8B8A00288B09 /* Icon-smail.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAAB4BE19AD8B8A00288B09 /* Icon-smail.png */; };
+		DAAEE68B19AEFDDA00D315F9 /* MyMPMoviePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAEE68919AEFDDA00D315F9 /* MyMPMoviePlayerViewController.m */; };
+		DAAEE68C19AEFDDA00D315F9 /* MyMPMoviePlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAAEE68A19AEFDDA00D315F9 /* MyMPMoviePlayerViewController.xib */; };
+		DAAEE69419AF302500D315F9 /* BaseUINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAEE69319AF302500D315F9 /* BaseUINavigationController.m */; };
+		DAAF65F519B5C86D006EC48D /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAF65F419B5C86D006EC48D /* BaseTableViewController.m */; };
+		DAAF65F919B5D111006EC48D /* ViewHelperTools.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAF65F819B5D111006EC48D /* ViewHelperTools.m */; };
+		DAAF65FC19B5D2AF006EC48D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAF65FB19B5D2AF006EC48D /* BaseViewController.m */; };
+		DAC2E166196BCEBD00569B1B /* mplaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC2E165196BCEBD00569B1B /* mplaceholder.png */; };
+		DAC2E217196BDBBA00569B1B /* DOUAudioAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E1EF196BDBBA00569B1B /* DOUAudioAnalyzer.m */; };
+		DAC2E218196BDBBA00569B1B /* DOUAudioAnalyzer+Default.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E1F1196BDBBA00569B1B /* DOUAudioAnalyzer+Default.m */; };
+		DAC2E219196BDBBA00569B1B /* DOUAudioDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E1F4196BDBBA00569B1B /* DOUAudioDecoder.m */; };
+		DAC2E21A196BDBBA00569B1B /* DOUAudioEventLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E1F6196BDBBA00569B1B /* DOUAudioEventLoop.m */; };
+		DAC2E21B196BDBBA00569B1B /* DOUAudioFilePreprocessor.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E1F9196BDBBA00569B1B /* DOUAudioFilePreprocessor.m */; };
+		DAC2E21C196BDBBA00569B1B /* DOUAudioFileProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E1FB196BDBBA00569B1B /* DOUAudioFileProvider.m */; };
+		DAC2E21D196BDBBA00569B1B /* DOUAudioFrequencyAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E1FD196BDBBA00569B1B /* DOUAudioFrequencyAnalyzer.m */; };
+		DAC2E21E196BDBBA00569B1B /* DOUAudioLPCM.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E1FF196BDBBA00569B1B /* DOUAudioLPCM.m */; };
+		DAC2E21F196BDBBA00569B1B /* DOUAudioPlaybackItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E201196BDBBA00569B1B /* DOUAudioPlaybackItem.m */; };
+		DAC2E220196BDBBA00569B1B /* DOUAudioRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E203196BDBBA00569B1B /* DOUAudioRenderer.m */; };
+		DAC2E221196BDBBA00569B1B /* DOUAudioSpatialAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E205196BDBBA00569B1B /* DOUAudioSpatialAnalyzer.m */; };
+		DAC2E222196BDBBA00569B1B /* DOUAudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E208196BDBBA00569B1B /* DOUAudioStreamer.m */; };
+		DAC2E223196BDBBA00569B1B /* DOUAudioStreamer+Options.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E20A196BDBBA00569B1B /* DOUAudioStreamer+Options.m */; };
+		DAC2E224196BDBBA00569B1B /* DOUAudioVisualizer.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E20C196BDBBA00569B1B /* DOUAudioVisualizer.m */; };
+		DAC2E225196BDBBA00569B1B /* DOUEAGL1View.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E20E196BDBBA00569B1B /* DOUEAGL1View.m */; };
+		DAC2E226196BDBBA00569B1B /* DOUEAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E210196BDBBA00569B1B /* DOUEAGLView.m */; };
+		DAC2E227196BDBBA00569B1B /* DOUMPMediaLibraryAssetLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E212196BDBBA00569B1B /* DOUMPMediaLibraryAssetLoader.m */; };
+		DAC2E228196BDBBA00569B1B /* DOUSimpleHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E214196BDBBA00569B1B /* DOUSimpleHTTPRequest.m */; };
+		DAC2E229196BDBBA00569B1B /* NSData+DOUMappedFile.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC2E216196BDBBA00569B1B /* NSData+DOUMappedFile.m */; };
+		DAC2E235196BEA1D00569B1B /* PlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC2E234196BEA1D00569B1B /* PlayerViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0481F08ACF284CE2B04FBE1A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		181B9741193D80E100CEDE91 /* MusicTableViewMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicTableViewMenuController.h; sourceTree = "<group>"; };
+		181B9742193D80E100CEDE91 /* MusicTableViewMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicTableViewMenuController.m; sourceTree = "<group>"; };
+		181B9743193D80E100CEDE91 /* MusicTableViewMenuController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicTableViewMenuController.xib; sourceTree = "<group>"; };
+		181B9747193D8FC200CEDE91 /* IISideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IISideController.h; sourceTree = "<group>"; };
+		181B9748193D8FC200CEDE91 /* IISideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IISideController.m; sourceTree = "<group>"; };
+		181B9749193D8FC200CEDE91 /* IIViewDeckController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIViewDeckController.h; sourceTree = "<group>"; };
+		181B974A193D8FC200CEDE91 /* IIViewDeckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIViewDeckController.m; sourceTree = "<group>"; };
+		181B974B193D8FC200CEDE91 /* IIWrapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIWrapController.h; sourceTree = "<group>"; };
+		181B974C193D8FC200CEDE91 /* IIWrapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIWrapController.m; sourceTree = "<group>"; };
+		181B976D193D935100CEDE91 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		181B9776193D950600CEDE91 /* HttpTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTools.h; sourceTree = "<group>"; };
+		181B9777193D950600CEDE91 /* HttpTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTools.m; sourceTree = "<group>"; };
+		181B9778193D950600CEDE91 /* JsonTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonTools.h; sourceTree = "<group>"; };
+		181B9779193D950600CEDE91 /* JsonTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonTools.m; sourceTree = "<group>"; };
+		181B977C193DB5E000CEDE91 /* MusicMenuBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicMenuBean.h; sourceTree = "<group>"; };
+		181B977D193DB5E000CEDE91 /* MusicMenuBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicMenuBean.m; sourceTree = "<group>"; };
+		181B977F193DB6FE00CEDE91 /* MusicMenuAllBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicMenuAllBean.h; sourceTree = "<group>"; };
+		181B9780193DB6FE00CEDE91 /* MusicMenuAllBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicMenuAllBean.m; sourceTree = "<group>"; };
+		18394C7719471B320091A3B3 /* DownLoadedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownLoadedViewController.h; sourceTree = "<group>"; };
+		18394C7819471B320091A3B3 /* DownLoadedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadedViewController.m; sourceTree = "<group>"; };
+		18394C7919471B320091A3B3 /* DownLoadedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownLoadedViewController.xib; sourceTree = "<group>"; };
+		183984ED1937181500B43B24 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		183984EE1937181500B43B24 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		183984F01937186A00B43B24 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		183984F5193720CB00B43B24 /* XMLBrodCast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLBrodCast.h; sourceTree = "<group>"; };
+		183984F6193720CB00B43B24 /* XMLBrodCast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLBrodCast.m; sourceTree = "<group>"; };
+		183984F8193721EA00B43B24 /* XMLBrodCastItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLBrodCastItem.h; sourceTree = "<group>"; };
+		183984F9193721EA00B43B24 /* XMLBrodCastItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLBrodCastItem.m; sourceTree = "<group>"; };
+		183984FC193723B300B43B24 /* XMLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLTools.h; sourceTree = "<group>"; };
+		183984FD193723B300B43B24 /* XMLTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLTools.m; sourceTree = "<group>"; };
+		1856B2761946A1BA0013CDB2 /* DownLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownLoadViewController.h; sourceTree = "<group>"; };
+		1856B2771946A1BA0013CDB2 /* DownLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadViewController.m; sourceTree = "<group>"; };
+		1856B2781946A1BA0013CDB2 /* DownLoadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownLoadViewController.xib; sourceTree = "<group>"; };
+		1856B2811946F6090013CDB2 /* StringTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringTools.h; sourceTree = "<group>"; };
+		1856B2821946F6090013CDB2 /* StringTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringTools.m; sourceTree = "<group>"; };
+		185EE34119455EA7006EB1CD /* DownLoadTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownLoadTools.h; sourceTree = "<group>"; };
+		185EE34219455EA7006EB1CD /* DownLoadTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadTools.m; sourceTree = "<group>"; };
+		185EE34A1945AF36006EB1CD /* DownLoadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownLoadTableViewCell.h; sourceTree = "<group>"; };
+		185EE34B1945AF36006EB1CD /* DownLoadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadTableViewCell.m; sourceTree = "<group>"; };
+		185EE34C1945AF36006EB1CD /* DownLoadTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownLoadTableViewCell.xib; sourceTree = "<group>"; };
+		188A0754194D3832005BC00F /* FavouriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouriteViewController.h; sourceTree = "<group>"; };
+		188A0755194D3832005BC00F /* FavouriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavouriteViewController.m; sourceTree = "<group>"; };
+		188A0756194D3832005BC00F /* FavouriteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavouriteViewController.xib; sourceTree = "<group>"; };
+		188A0759194D61CC005BC00F /* like_enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like_enabled.png; sourceTree = "<group>"; };
+		188A075B194D7193005BC00F /* FavouriteTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouriteTableViewController.h; sourceTree = "<group>"; };
+		188A075C194D7193005BC00F /* FavouriteTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavouriteTableViewController.m; sourceTree = "<group>"; };
+		188A075D194D7193005BC00F /* FavouriteTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavouriteTableViewController.xib; sourceTree = "<group>"; };
+		188A0760194D73F5005BC00F /* FavouriteAlbumTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouriteAlbumTableViewController.h; sourceTree = "<group>"; };
+		188A0761194D73F5005BC00F /* FavouriteAlbumTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavouriteAlbumTableViewController.m; sourceTree = "<group>"; };
+		188A0762194D73F5005BC00F /* FavouriteAlbumTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavouriteAlbumTableViewController.xib; sourceTree = "<group>"; };
+		18B21452193EC50B00BD9CBE /* ChannelTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelTableViewController.h; sourceTree = "<group>"; };
+		18B21453193EC50B00BD9CBE /* ChannelTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelTableViewController.m; sourceTree = "<group>"; };
+		18B21454193EC50B00BD9CBE /* ChannelTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChannelTableViewController.xib; sourceTree = "<group>"; };
+		18B21457193ECD8C00BD9CBE /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = placeholder.png; path = DOUASDemo/placeholder.png; sourceTree = "<group>"; };
+		18C7012F1947FFC200A14D4F /* MusicPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayViewController.h; sourceTree = "<group>"; };
+		18C701301947FFC200A14D4F /* MusicPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayViewController.m; sourceTree = "<group>"; };
+		18C701311947FFC200A14D4F /* MusicPlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicPlayViewController.xib; sourceTree = "<group>"; };
+		18C7014119485D1A00A14D4F /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		18CFB986194A9A8600ADC133 /* SettingMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingMenuViewController.h; sourceTree = "<group>"; };
+		18CFB987194A9A8600ADC133 /* SettingMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingMenuViewController.m; sourceTree = "<group>"; };
+		18CFB988194A9A8600ADC133 /* SettingMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingMenuViewController.xib; sourceTree = "<group>"; };
+		18CFB98B194AA0CB00ADC133 /* SettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewCell.h; sourceTree = "<group>"; };
+		18CFB98C194AA0CB00ADC133 /* SettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewCell.m; sourceTree = "<group>"; };
+		18CFB98D194AA0CB00ADC133 /* SettingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
+		18CFB990194AAA0D00ADC133 /* SettingBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingBean.h; sourceTree = "<group>"; };
+		18CFB991194AAA0D00ADC133 /* SettingBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingBean.m; sourceTree = "<group>"; };
+		18CFB993194AE65000ADC133 /* AlbumCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumCellTableViewCell.h; sourceTree = "<group>"; };
+		18CFB994194AE65000ADC133 /* AlbumCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumCellTableViewCell.m; sourceTree = "<group>"; };
+		18CFB995194AE65000ADC133 /* AlbumCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlbumCellTableViewCell.xib; sourceTree = "<group>"; };
+		18CFB998194AEAAE00ADC133 /* RSS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RSS.png; path = DOUASDemo/RSS.png; sourceTree = "<group>"; };
+		18CFB99A194AEEA700ADC133 /* MusicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicCell.h; sourceTree = "<group>"; };
+		18CFB99B194AEEA700ADC133 /* MusicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicCell.m; sourceTree = "<group>"; };
+		18CFB99C194AEEA700ADC133 /* MusicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicCell.xib; sourceTree = "<group>"; };
+		18CFB99F194AF04E00ADC133 /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = download.png; path = DOUASDemo/download.png; sourceTree = "<group>"; };
+		18CFB9A5194AF10D00ADC133 /* ic_player_fav_disable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_player_fav_disable.png; sourceTree = "<group>"; };
+		18CFB9A6194AF10D00ADC133 /* ic_player_fav_selected_highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_player_fav_selected_highlight.png; sourceTree = "<group>"; };
+		18EDEF77194991DD00DF1B34 /* play_ctrl_pause_prs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_ctrl_pause_prs.png; sourceTree = "<group>"; };
+		18EDEF78194991DD00DF1B34 /* play_ctrl_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_ctrl_pause.png; sourceTree = "<group>"; };
+		18EDEF79194991DD00DF1B34 /* play_ctrl_play_prs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_ctrl_play_prs.png; sourceTree = "<group>"; };
+		18EDEF7A194991DD00DF1B34 /* play_ctrl_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_ctrl_play.png; sourceTree = "<group>"; };
+		18EDEF7F1949929B00DF1B34 /* play_btn_next_prs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_btn_next_prs.png; sourceTree = "<group>"; };
+		18EDEF801949929B00DF1B34 /* play_btn_next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_btn_next.png; sourceTree = "<group>"; };
+		18EDEF811949929B00DF1B34 /* play_btn_prev_prs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_btn_prev_prs.png; sourceTree = "<group>"; };
+		18EDEF821949929B00DF1B34 /* play_btn_prev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_btn_prev.png; sourceTree = "<group>"; };
+		18EDEF871949A75B00DF1B34 /* default_album_sml.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default_album_sml.jpg; sourceTree = "<group>"; };
+		18EDEF891949B1C800DF1B34 /* default_album_mid.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default_album_mid.jpg; sourceTree = "<group>"; };
+		18F978B01942BF25006900E1 /* NSFileManager+TCBlobDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+TCBlobDownload.h"; sourceTree = "<group>"; };
+		18F978B11942BF25006900E1 /* NSFileManager+TCBlobDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+TCBlobDownload.m"; sourceTree = "<group>"; };
+		18F978B21942BF25006900E1 /* UIDevice-Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice-Hardware.h"; sourceTree = "<group>"; };
+		18F978B31942BF25006900E1 /* UIDevice-Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-Hardware.m"; sourceTree = "<group>"; };
+		18F978B51942BF25006900E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		18F978B61942BF25006900E1 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		18F978B71942BF25006900E1 /* TCBlobDownload-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TCBlobDownload-Prefix.pch"; sourceTree = "<group>"; };
+		18F978B81942BF25006900E1 /* TCBlobDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBlobDownload.h; sourceTree = "<group>"; };
+		18F978B91942BF25006900E1 /* TCBlobDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBlobDownloader.h; sourceTree = "<group>"; };
+		18F978BA1942BF25006900E1 /* TCBlobDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBlobDownloader.m; sourceTree = "<group>"; };
+		18F978BB1942BF25006900E1 /* TCBlobDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBlobDownloadManager.h; sourceTree = "<group>"; };
+		18F978BC1942BF25006900E1 /* TCBlobDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBlobDownloadManager.m; sourceTree = "<group>"; };
+		18F978C219430B96006900E1 /* DownloadTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadTableViewController.h; sourceTree = "<group>"; };
+		18F978C319430B97006900E1 /* DownloadTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadTableViewController.m; sourceTree = "<group>"; };
+		18F978C419430B97006900E1 /* DownloadTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadTableViewController.xib; sourceTree = "<group>"; };
+		18F978D719431466006900E1 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		18F978FB19432710006900E1 /* NoteBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteBean.h; sourceTree = "<group>"; };
+		18F978FC19432710006900E1 /* NoteBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteBean.m; sourceTree = "<group>"; };
+		18F978FD19432710006900E1 /* SqlTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqlTools.h; sourceTree = "<group>"; };
+		18F978FE19432710006900E1 /* SqlTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqlTools.m; sourceTree = "<group>"; };
+		BCC3A38A30EE47EFA20E797E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		D400E946171BF13F00BE7F37 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		D42DA80F17865EE4007276E5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D42DA81117865EE9007276E5 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		D4632A6E17AE27E30065ECDE /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		D4C3891F171B9D87009D6124 /* WJFM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WJFM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4C38922171B9D87009D6124 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D4C38924171B9D87009D6124 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D4C38926171B9D87009D6124 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D4C3892A171B9D87009D6124 /* WJFM-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WJFM-Info.plist"; sourceTree = "<group>"; };
+		D4C3892C171B9D87009D6124 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D4C3892E171B9D87009D6124 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D4C38930171B9D87009D6124 /* WJFM-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WJFM-Prefix.pch"; sourceTree = "<group>"; };
+		D4C38931171B9D87009D6124 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D4C38932171B9D87009D6124 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D4C38934171B9D87009D6124 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D4C38936171B9D87009D6124 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D4C38938171B9D87009D6124 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D4C38947171B9E36009D6124 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D4C38949171B9E3A009D6124 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		D4C3894B171B9E3D009D6124 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D4F5B28B18A5F0C70063865C /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
+		D4F5B28C18A5F0C70063865C /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
+		D4F5B28E18A5F1B70063865C /* Track+Provider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Track+Provider.h"; sourceTree = "<group>"; };
+		D4F5B28F18A5F1B70063865C /* Track+Provider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Track+Provider.m"; sourceTree = "<group>"; };
+		D4F5B29118A5F3030063865C /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		D4F5B29218A5F3030063865C /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		D4F5B29418A5F6B90063865C /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		D4F5B29518A5F6B90063865C /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		D4F5B29718A605A70063865C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D4F5B29918A605AB0063865C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		DA8CB0DB19AB424300968D7A /* HistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewController.h; sourceTree = "<group>"; };
+		DA8CB0DC19AB424300968D7A /* HistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewController.m; sourceTree = "<group>"; };
+		DA8CB0DD19AB424300968D7A /* HistoryTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryTableViewController.xib; sourceTree = "<group>"; };
+		DAAAB4B819AD8AEB00288B09 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		DAAAB4BA19AD8B3E00288B09 /* Icon-smail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-smail@2x.png"; sourceTree = "<group>"; };
+		DAAAB4BC19AD8B6400288B09 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		DAAAB4BE19AD8B8A00288B09 /* Icon-smail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-smail.png"; sourceTree = "<group>"; };
+		DAAEE68819AEFDDA00D315F9 /* MyMPMoviePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMPMoviePlayerViewController.h; sourceTree = "<group>"; };
+		DAAEE68919AEFDDA00D315F9 /* MyMPMoviePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMPMoviePlayerViewController.m; sourceTree = "<group>"; };
+		DAAEE68A19AEFDDA00D315F9 /* MyMPMoviePlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyMPMoviePlayerViewController.xib; sourceTree = "<group>"; };
+		DAAEE69219AF302500D315F9 /* BaseUINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseUINavigationController.h; sourceTree = "<group>"; };
+		DAAEE69319AF302500D315F9 /* BaseUINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseUINavigationController.m; sourceTree = "<group>"; };
+		DAAF65F319B5C86D006EC48D /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		DAAF65F419B5C86D006EC48D /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		DAAF65F719B5D111006EC48D /* ViewHelperTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewHelperTools.h; sourceTree = "<group>"; };
+		DAAF65F819B5D111006EC48D /* ViewHelperTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewHelperTools.m; sourceTree = "<group>"; };
+		DAAF65FA19B5D2AF006EC48D /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		DAAF65FB19B5D2AF006EC48D /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		DAC2E165196BCEBD00569B1B /* mplaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mplaceholder.png; sourceTree = "<group>"; };
+		DAC2E1ED196BDBBA00569B1B /* DOUAudioAnalyzer_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioAnalyzer_Private.h; sourceTree = "<group>"; };
+		DAC2E1EE196BDBBA00569B1B /* DOUAudioAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioAnalyzer.h; sourceTree = "<group>"; };
+		DAC2E1EF196BDBBA00569B1B /* DOUAudioAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUAudioAnalyzer.m; sourceTree = "<group>"; };
+		DAC2E1F0196BDBBA00569B1B /* DOUAudioAnalyzer+Default.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DOUAudioAnalyzer+Default.h"; sourceTree = "<group>"; };
+		DAC2E1F1196BDBBA00569B1B /* DOUAudioAnalyzer+Default.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DOUAudioAnalyzer+Default.m"; sourceTree = "<group>"; };
+		DAC2E1F2196BDBBA00569B1B /* DOUAudioBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioBase.h; sourceTree = "<group>"; };
+		DAC2E1F3196BDBBA00569B1B /* DOUAudioDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioDecoder.h; sourceTree = "<group>"; };
+		DAC2E1F4196BDBBA00569B1B /* DOUAudioDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUAudioDecoder.m; sourceTree = "<group>"; };
+		DAC2E1F5196BDBBA00569B1B /* DOUAudioEventLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioEventLoop.h; sourceTree = "<group>"; };
+		DAC2E1F6196BDBBA00569B1B /* DOUAudioEventLoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUAudioEventLoop.m; sourceTree = "<group>"; };
+		DAC2E1F7196BDBBA00569B1B /* DOUAudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioFile.h; sourceTree = "<group>"; };
+		DAC2E1F8196BDBBA00569B1B /* DOUAudioFilePreprocessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioFilePreprocessor.h; sourceTree = "<group>"; };
+		DAC2E1F9196BDBBA00569B1B /* DOUAudioFilePreprocessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUAudioFilePreprocessor.m; sourceTree = "<group>"; };
+		DAC2E1FA196BDBBA00569B1B /* DOUAudioFileProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioFileProvider.h; sourceTree = "<group>"; };
+		DAC2E1FB196BDBBA00569B1B /* DOUAudioFileProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUAudioFileProvider.m; sourceTree = "<group>"; };
+		DAC2E1FC196BDBBA00569B1B /* DOUAudioFrequencyAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioFrequencyAnalyzer.h; sourceTree = "<group>"; };
+		DAC2E1FD196BDBBA00569B1B /* DOUAudioFrequencyAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUAudioFrequencyAnalyzer.m; sourceTree = "<group>"; };
+		DAC2E1FE196BDBBA00569B1B /* DOUAudioLPCM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioLPCM.h; sourceTree = "<group>"; };
+		DAC2E1FF196BDBBA00569B1B /* DOUAudioLPCM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUAudioLPCM.m; sourceTree = "<group>"; };
+		DAC2E200196BDBBA00569B1B /* DOUAudioPlaybackItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioPlaybackItem.h; sourceTree = "<group>"; };
+		DAC2E201196BDBBA00569B1B /* DOUAudioPlaybackItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUAudioPlaybackItem.m; sourceTree = "<group>"; };
+		DAC2E202196BDBBA00569B1B /* DOUAudioRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioRenderer.h; sourceTree = "<group>"; };
+		DAC2E203196BDBBA00569B1B /* DOUAudioRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUAudioRenderer.m; sourceTree = "<group>"; };
+		DAC2E204196BDBBA00569B1B /* DOUAudioSpatialAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioSpatialAnalyzer.h; sourceTree = "<group>"; };
+		DAC2E205196BDBBA00569B1B /* DOUAudioSpatialAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUAudioSpatialAnalyzer.m; sourceTree = "<group>"; };
+		DAC2E206196BDBBA00569B1B /* DOUAudioStreamer_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioStreamer_Private.h; sourceTree = "<group>"; };
+		DAC2E207196BDBBA00569B1B /* DOUAudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioStreamer.h; sourceTree = "<group>"; };
+		DAC2E208196BDBBA00569B1B /* DOUAudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUAudioStreamer.m; sourceTree = "<group>"; };
+		DAC2E209196BDBBA00569B1B /* DOUAudioStreamer+Options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DOUAudioStreamer+Options.h"; sourceTree = "<group>"; };
+		DAC2E20A196BDBBA00569B1B /* DOUAudioStreamer+Options.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DOUAudioStreamer+Options.m"; sourceTree = "<group>"; };
+		DAC2E20B196BDBBA00569B1B /* DOUAudioVisualizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUAudioVisualizer.h; sourceTree = "<group>"; };
+		DAC2E20C196BDBBA00569B1B /* DOUAudioVisualizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUAudioVisualizer.m; sourceTree = "<group>"; };
+		DAC2E20D196BDBBA00569B1B /* DOUEAGL1View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUEAGL1View.h; sourceTree = "<group>"; };
+		DAC2E20E196BDBBA00569B1B /* DOUEAGL1View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUEAGL1View.m; sourceTree = "<group>"; };
+		DAC2E20F196BDBBA00569B1B /* DOUEAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUEAGLView.h; sourceTree = "<group>"; };
+		DAC2E210196BDBBA00569B1B /* DOUEAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUEAGLView.m; sourceTree = "<group>"; };
+		DAC2E211196BDBBA00569B1B /* DOUMPMediaLibraryAssetLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUMPMediaLibraryAssetLoader.h; sourceTree = "<group>"; };
+		DAC2E212196BDBBA00569B1B /* DOUMPMediaLibraryAssetLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUMPMediaLibraryAssetLoader.m; sourceTree = "<group>"; };
+		DAC2E213196BDBBA00569B1B /* DOUSimpleHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOUSimpleHTTPRequest.h; sourceTree = "<group>"; };
+		DAC2E214196BDBBA00569B1B /* DOUSimpleHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOUSimpleHTTPRequest.m; sourceTree = "<group>"; };
+		DAC2E215196BDBBA00569B1B /* NSData+DOUMappedFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DOUMappedFile.h"; sourceTree = "<group>"; };
+		DAC2E216196BDBBA00569B1B /* NSData+DOUMappedFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DOUMappedFile.m"; sourceTree = "<group>"; };
+		DAC2E234196BEA1D00569B1B /* PlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4C3891C171B9D87009D6124 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4F5B29A18A605AB0063865C /* MediaPlayer.framework in Frameworks */,
+				18F978D819431466006900E1 /* libsqlite3.dylib in Frameworks */,
+				181B976E193D935100CEDE91 /* SystemConfiguration.framework in Frameworks */,
+				183984F319371DBD00B43B24 /* libxml2.dylib in Frameworks */,
+				D4F5B29818A605A70063865C /* AVFoundation.framework in Frameworks */,
+				D4632A6F17AE27E30065ECDE /* MobileCoreServices.framework in Frameworks */,
+				D42DA81217865EE9007276E5 /* OpenGLES.framework in Frameworks */,
+				D42DA81017865EE4007276E5 /* QuartzCore.framework in Frameworks */,
+				D400E947171BF13F00BE7F37 /* Accelerate.framework in Frameworks */,
+				D4C3894C171B9E3D009D6124 /* CFNetwork.framework in Frameworks */,
+				D4C3894A171B9E3A009D6124 /* CoreAudio.framework in Frameworks */,
+				D4C38948171B9E36009D6124 /* AudioToolbox.framework in Frameworks */,
+				D4C38923171B9D87009D6124 /* UIKit.framework in Frameworks */,
+				D4C38925171B9D87009D6124 /* Foundation.framework in Frameworks */,
+				D4C38927171B9D87009D6124 /* CoreGraphics.framework in Frameworks */,
+				38D84B47C665480880976B3C /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		181B9740193D80AB00CEDE91 /* coll */ = {
+			isa = PBXGroup;
+			children = (
+				DAAEE68719AEFD9900D315F9 /* mediapPlayerColl */,
+				DA94C7F019AB40E100B2FDB3 /* historyColl */,
+				181B9741193D80E100CEDE91 /* MusicTableViewMenuController.h */,
+				181B9742193D80E100CEDE91 /* MusicTableViewMenuController.m */,
+				181B9743193D80E100CEDE91 /* MusicTableViewMenuController.xib */,
+				18B21452193EC50B00BD9CBE /* ChannelTableViewController.h */,
+				18B21453193EC50B00BD9CBE /* ChannelTableViewController.m */,
+				18B21454193EC50B00BD9CBE /* ChannelTableViewController.xib */,
+				18F978C219430B96006900E1 /* DownloadTableViewController.h */,
+				18F978C319430B97006900E1 /* DownloadTableViewController.m */,
+				18F978C419430B97006900E1 /* DownloadTableViewController.xib */,
+				1856B2761946A1BA0013CDB2 /* DownLoadViewController.h */,
+				1856B2771946A1BA0013CDB2 /* DownLoadViewController.m */,
+				1856B2781946A1BA0013CDB2 /* DownLoadViewController.xib */,
+				18394C7719471B320091A3B3 /* DownLoadedViewController.h */,
+				18394C7819471B320091A3B3 /* DownLoadedViewController.m */,
+				188A075B194D7193005BC00F /* FavouriteTableViewController.h */,
+				188A075C194D7193005BC00F /* FavouriteTableViewController.m */,
+				188A075D194D7193005BC00F /* FavouriteTableViewController.xib */,
+				18394C7919471B320091A3B3 /* DownLoadedViewController.xib */,
+				18CFB986194A9A8600ADC133 /* SettingMenuViewController.h */,
+				18CFB987194A9A8600ADC133 /* SettingMenuViewController.m */,
+				18CFB988194A9A8600ADC133 /* SettingMenuViewController.xib */,
+				188A0754194D3832005BC00F /* FavouriteViewController.h */,
+				188A0755194D3832005BC00F /* FavouriteViewController.m */,
+				188A0756194D3832005BC00F /* FavouriteViewController.xib */,
+				188A0760194D73F5005BC00F /* FavouriteAlbumTableViewController.h */,
+				188A0761194D73F5005BC00F /* FavouriteAlbumTableViewController.m */,
+				188A0762194D73F5005BC00F /* FavouriteAlbumTableViewController.xib */,
+			);
+			name = coll;
+			sourceTree = "<group>";
+		};
+		181B9746193D8FC200CEDE91 /* ViewDeck */ = {
+			isa = PBXGroup;
+			children = (
+				181B9747193D8FC200CEDE91 /* IISideController.h */,
+				181B9748193D8FC200CEDE91 /* IISideController.m */,
+				181B9749193D8FC200CEDE91 /* IIViewDeckController.h */,
+				181B974A193D8FC200CEDE91 /* IIViewDeckController.m */,
+				181B974B193D8FC200CEDE91 /* IIWrapController.h */,
+				181B974C193D8FC200CEDE91 /* IIWrapController.m */,
+			);
+			path = ViewDeck;
+			sourceTree = "<group>";
+		};
+		183984EB1937180500B43B24 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				DAC2E1EC196BDBA200569B1B /* BD_FM */,
+				18F978AE1942BF25006900E1 /* TCBlobDownload */,
+				181B9746193D8FC200CEDE91 /* ViewDeck */,
+				183984EC1937181500B43B24 /* GDataXML */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		183984EC1937181500B43B24 /* GDataXML */ = {
+			isa = PBXGroup;
+			children = (
+				183984ED1937181500B43B24 /* GDataXMLNode.h */,
+				183984EE1937181500B43B24 /* GDataXMLNode.m */,
+			);
+			path = GDataXML;
+			sourceTree = "<group>";
+		};
+		183984F41937207F00B43B24 /* bean */ = {
+			isa = PBXGroup;
+			children = (
+				D4F5B28B18A5F0C70063865C /* Track.h */,
+				D4F5B28C18A5F0C70063865C /* Track.m */,
+				183984F5193720CB00B43B24 /* XMLBrodCast.h */,
+				183984F6193720CB00B43B24 /* XMLBrodCast.m */,
+				183984F8193721EA00B43B24 /* XMLBrodCastItem.h */,
+				183984F9193721EA00B43B24 /* XMLBrodCastItem.m */,
+				181B977F193DB6FE00CEDE91 /* MusicMenuAllBean.h */,
+				181B9780193DB6FE00CEDE91 /* MusicMenuAllBean.m */,
+				181B977C193DB5E000CEDE91 /* MusicMenuBean.h */,
+				181B977D193DB5E000CEDE91 /* MusicMenuBean.m */,
+				18CFB990194AAA0D00ADC133 /* SettingBean.h */,
+				18CFB991194AAA0D00ADC133 /* SettingBean.m */,
+			);
+			name = bean;
+			sourceTree = "<group>";
+		};
+		183984FB193723A100B43B24 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				DAAF65F619B5D0EC006EC48D /* view */,
+				181B9776193D950600CEDE91 /* HttpTools.h */,
+				18F978FB19432710006900E1 /* NoteBean.h */,
+				18F978FC19432710006900E1 /* NoteBean.m */,
+				18F978FD19432710006900E1 /* SqlTools.h */,
+				18F978FE19432710006900E1 /* SqlTools.m */,
+				181B9777193D950600CEDE91 /* HttpTools.m */,
+				181B9778193D950600CEDE91 /* JsonTools.h */,
+				181B9779193D950600CEDE91 /* JsonTools.m */,
+				183984FC193723B300B43B24 /* XMLTools.h */,
+				183984FD193723B300B43B24 /* XMLTools.m */,
+				185EE34119455EA7006EB1CD /* DownLoadTools.h */,
+				185EE34219455EA7006EB1CD /* DownLoadTools.m */,
+				1856B2811946F6090013CDB2 /* StringTools.h */,
+				1856B2821946F6090013CDB2 /* StringTools.m */,
+			);
+			name = tools;
+			sourceTree = "<group>";
+		};
+		185EE3441945974F006EB1CD /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				185EE34A1945AF36006EB1CD /* DownLoadTableViewCell.h */,
+				185EE34B1945AF36006EB1CD /* DownLoadTableViewCell.m */,
+				185EE34C1945AF36006EB1CD /* DownLoadTableViewCell.xib */,
+				18CFB98B194AA0CB00ADC133 /* SettingTableViewCell.h */,
+				18CFB98C194AA0CB00ADC133 /* SettingTableViewCell.m */,
+				18CFB98D194AA0CB00ADC133 /* SettingTableViewCell.xib */,
+				18CFB993194AE65000ADC133 /* AlbumCellTableViewCell.h */,
+				18CFB994194AE65000ADC133 /* AlbumCellTableViewCell.m */,
+				18CFB995194AE65000ADC133 /* AlbumCellTableViewCell.xib */,
+				18CFB99A194AEEA700ADC133 /* MusicCell.h */,
+				18CFB99B194AEEA700ADC133 /* MusicCell.m */,
+				18CFB99C194AEEA700ADC133 /* MusicCell.xib */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		18B21459193ECD9700BD9CBE /* IMG */ = {
+			isa = PBXGroup;
+			children = (
+				18EDEF77194991DD00DF1B34 /* play_ctrl_pause_prs.png */,
+				18EDEF871949A75B00DF1B34 /* default_album_sml.jpg */,
+				18EDEF78194991DD00DF1B34 /* play_ctrl_pause.png */,
+				DAC2E165196BCEBD00569B1B /* mplaceholder.png */,
+				18EDEF891949B1C800DF1B34 /* default_album_mid.jpg */,
+				18EDEF7F1949929B00DF1B34 /* play_btn_next_prs.png */,
+				18EDEF801949929B00DF1B34 /* play_btn_next.png */,
+				188A0759194D61CC005BC00F /* like_enabled.png */,
+				18EDEF811949929B00DF1B34 /* play_btn_prev_prs.png */,
+				18EDEF821949929B00DF1B34 /* play_btn_prev.png */,
+				18EDEF79194991DD00DF1B34 /* play_ctrl_play_prs.png */,
+				18CFB998194AEAAE00ADC133 /* RSS.png */,
+				18CFB9A5194AF10D00ADC133 /* ic_player_fav_disable.png */,
+				18CFB9A6194AF10D00ADC133 /* ic_player_fav_selected_highlight.png */,
+				18EDEF7A194991DD00DF1B34 /* play_ctrl_play.png */,
+				18CFB99F194AF04E00ADC133 /* download.png */,
+				18B21457193ECD8C00BD9CBE /* placeholder.png */,
+			);
+			name = IMG;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		18C7012E1947FF2200A14D4F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				18C7012F1947FFC200A14D4F /* MusicPlayViewController.h */,
+				18C701301947FFC200A14D4F /* MusicPlayViewController.m */,
+				18C701311947FFC200A14D4F /* MusicPlayViewController.xib */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		18F978AE1942BF25006900E1 /* TCBlobDownload */ = {
+			isa = PBXGroup;
+			children = (
+				18F978AF1942BF25006900E1 /* Categories */,
+				18F978B41942BF25006900E1 /* Localizable.strings */,
+				18F978B71942BF25006900E1 /* TCBlobDownload-Prefix.pch */,
+				18F978B81942BF25006900E1 /* TCBlobDownload.h */,
+				18F978B91942BF25006900E1 /* TCBlobDownloader.h */,
+				18F978BA1942BF25006900E1 /* TCBlobDownloader.m */,
+				18F978BB1942BF25006900E1 /* TCBlobDownloadManager.h */,
+				18F978BC1942BF25006900E1 /* TCBlobDownloadManager.m */,
+			);
+			path = TCBlobDownload;
+			sourceTree = "<group>";
+		};
+		18F978AF1942BF25006900E1 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				18F978B01942BF25006900E1 /* NSFileManager+TCBlobDownload.h */,
+				18F978B11942BF25006900E1 /* NSFileManager+TCBlobDownload.m */,
+				18F978B21942BF25006900E1 /* UIDevice-Hardware.h */,
+				18F978B31942BF25006900E1 /* UIDevice-Hardware.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		D4C38916171B9D87009D6124 = {
+			isa = PBXGroup;
+			children = (
+				D4C38928171B9D87009D6124 /* WaJiFM */,
+				D4C38921171B9D87009D6124 /* Frameworks */,
+				D4C38920171B9D87009D6124 /* Products */,
+				BCC3A38A30EE47EFA20E797E /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		D4C38920171B9D87009D6124 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4C3891F171B9D87009D6124 /* WJFM.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4C38921171B9D87009D6124 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18F978D719431466006900E1 /* libsqlite3.dylib */,
+				181B976D193D935100CEDE91 /* SystemConfiguration.framework */,
+				183984F01937186A00B43B24 /* libxml2.dylib */,
+				D4F5B29918A605AB0063865C /* MediaPlayer.framework */,
+				D4F5B29718A605A70063865C /* AVFoundation.framework */,
+				D4632A6E17AE27E30065ECDE /* MobileCoreServices.framework */,
+				D42DA81117865EE9007276E5 /* OpenGLES.framework */,
+				D42DA80F17865EE4007276E5 /* QuartzCore.framework */,
+				D400E946171BF13F00BE7F37 /* Accelerate.framework */,
+				D4C3894B171B9E3D009D6124 /* CFNetwork.framework */,
+				D4C38949171B9E3A009D6124 /* CoreAudio.framework */,
+				D4C38947171B9E36009D6124 /* AudioToolbox.framework */,
+				D4C38922171B9D87009D6124 /* UIKit.framework */,
+				D4C38924171B9D87009D6124 /* Foundation.framework */,
+				D4C38926171B9D87009D6124 /* CoreGraphics.framework */,
+				0481F08ACF284CE2B04FBE1A /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4C38928171B9D87009D6124 /* WaJiFM */ = {
+			isa = PBXGroup;
+			children = (
+				DAAEE69119AF300300D315F9 /* common */,
+				DAAEE68D19AF2D2A00D315F9 /* category */,
+				18B21459193ECD9700BD9CBE /* IMG */,
+				18C7012E1947FF2200A14D4F /* view */,
+				185EE3441945974F006EB1CD /* cell */,
+				183984FB193723A100B43B24 /* tools */,
+				183984F41937207F00B43B24 /* bean */,
+				183984EB1937180500B43B24 /* libs */,
+				D4C38931171B9D87009D6124 /* AppDelegate.h */,
+				D4C38932171B9D87009D6124 /* AppDelegate.m */,
+				181B9740193D80AB00CEDE91 /* coll */,
+				D4F5B28E18A5F1B70063865C /* Track+Provider.h */,
+				D4F5B28F18A5F1B70063865C /* Track+Provider.m */,
+				18C7014119485D1A00A14D4F /* MainViewController.xib */,
+				D4F5B29118A5F3030063865C /* MainViewController.h */,
+				D4F5B29218A5F3030063865C /* MainViewController.m */,
+				D4F5B29418A5F6B90063865C /* PlayerViewController.h */,
+				D4F5B29518A5F6B90063865C /* PlayerViewController.m */,
+				DAC2E234196BEA1D00569B1B /* PlayerViewController.xib */,
+				D4C38929171B9D87009D6124 /* Supporting Files */,
+			);
+			name = WaJiFM;
+			path = DOUASDemo;
+			sourceTree = "<group>";
+		};
+		D4C38929171B9D87009D6124 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAAAB4BE19AD8B8A00288B09 /* Icon-smail.png */,
+				DAAAB4BC19AD8B6400288B09 /* Icon.png */,
+				DAAAB4BA19AD8B3E00288B09 /* Icon-smail@2x.png */,
+				DAAAB4B819AD8AEB00288B09 /* Icon@2x.png */,
+				D4C3892A171B9D87009D6124 /* WJFM-Info.plist */,
+				D4C3892B171B9D87009D6124 /* InfoPlist.strings */,
+				D4C3892E171B9D87009D6124 /* main.m */,
+				D4C38930171B9D87009D6124 /* WJFM-Prefix.pch */,
+				D4C38934171B9D87009D6124 /* Default.png */,
+				D4C38936171B9D87009D6124 /* Default@2x.png */,
+				D4C38938171B9D87009D6124 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DA94C7F019AB40E100B2FDB3 /* historyColl */ = {
+			isa = PBXGroup;
+			children = (
+				DA8CB0DB19AB424300968D7A /* HistoryTableViewController.h */,
+				DA8CB0DC19AB424300968D7A /* HistoryTableViewController.m */,
+				DA8CB0DD19AB424300968D7A /* HistoryTableViewController.xib */,
+			);
+			name = historyColl;
+			sourceTree = "<group>";
+		};
+		DAAEE68719AEFD9900D315F9 /* mediapPlayerColl */ = {
+			isa = PBXGroup;
+			children = (
+				DAAEE68819AEFDDA00D315F9 /* MyMPMoviePlayerViewController.h */,
+				DAAEE68919AEFDDA00D315F9 /* MyMPMoviePlayerViewController.m */,
+				DAAEE68A19AEFDDA00D315F9 /* MyMPMoviePlayerViewController.xib */,
+			);
+			name = mediapPlayerColl;
+			sourceTree = "<group>";
+		};
+		DAAEE68D19AF2D2A00D315F9 /* category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = category;
+			sourceTree = "<group>";
+		};
+		DAAEE69119AF300300D315F9 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				DAAEE69219AF302500D315F9 /* BaseUINavigationController.h */,
+				DAAEE69319AF302500D315F9 /* BaseUINavigationController.m */,
+				DAAF65F319B5C86D006EC48D /* BaseTableViewController.h */,
+				DAAF65F419B5C86D006EC48D /* BaseTableViewController.m */,
+				DAAF65FA19B5D2AF006EC48D /* BaseViewController.h */,
+				DAAF65FB19B5D2AF006EC48D /* BaseViewController.m */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
+		DAAF65F619B5D0EC006EC48D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				DAAF65F719B5D111006EC48D /* ViewHelperTools.h */,
+				DAAF65F819B5D111006EC48D /* ViewHelperTools.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		DAC2E1EC196BDBA200569B1B /* BD_FM */ = {
+			isa = PBXGroup;
+			children = (
+				DAC2E1ED196BDBBA00569B1B /* DOUAudioAnalyzer_Private.h */,
+				DAC2E1EE196BDBBA00569B1B /* DOUAudioAnalyzer.h */,
+				DAC2E1EF196BDBBA00569B1B /* DOUAudioAnalyzer.m */,
+				DAC2E1F0196BDBBA00569B1B /* DOUAudioAnalyzer+Default.h */,
+				DAC2E1F1196BDBBA00569B1B /* DOUAudioAnalyzer+Default.m */,
+				DAC2E1F2196BDBBA00569B1B /* DOUAudioBase.h */,
+				DAC2E1F3196BDBBA00569B1B /* DOUAudioDecoder.h */,
+				DAC2E1F4196BDBBA00569B1B /* DOUAudioDecoder.m */,
+				DAC2E1F5196BDBBA00569B1B /* DOUAudioEventLoop.h */,
+				DAC2E1F6196BDBBA00569B1B /* DOUAudioEventLoop.m */,
+				DAC2E1F7196BDBBA00569B1B /* DOUAudioFile.h */,
+				DAC2E1F8196BDBBA00569B1B /* DOUAudioFilePreprocessor.h */,
+				DAC2E1F9196BDBBA00569B1B /* DOUAudioFilePreprocessor.m */,
+				DAC2E1FA196BDBBA00569B1B /* DOUAudioFileProvider.h */,
+				DAC2E1FB196BDBBA00569B1B /* DOUAudioFileProvider.m */,
+				DAC2E1FC196BDBBA00569B1B /* DOUAudioFrequencyAnalyzer.h */,
+				DAC2E1FD196BDBBA00569B1B /* DOUAudioFrequencyAnalyzer.m */,
+				DAC2E1FE196BDBBA00569B1B /* DOUAudioLPCM.h */,
+				DAC2E1FF196BDBBA00569B1B /* DOUAudioLPCM.m */,
+				DAC2E200196BDBBA00569B1B /* DOUAudioPlaybackItem.h */,
+				DAC2E201196BDBBA00569B1B /* DOUAudioPlaybackItem.m */,
+				DAC2E202196BDBBA00569B1B /* DOUAudioRenderer.h */,
+				DAC2E203196BDBBA00569B1B /* DOUAudioRenderer.m */,
+				DAC2E204196BDBBA00569B1B /* DOUAudioSpatialAnalyzer.h */,
+				DAC2E205196BDBBA00569B1B /* DOUAudioSpatialAnalyzer.m */,
+				DAC2E206196BDBBA00569B1B /* DOUAudioStreamer_Private.h */,
+				DAC2E207196BDBBA00569B1B /* DOUAudioStreamer.h */,
+				DAC2E208196BDBBA00569B1B /* DOUAudioStreamer.m */,
+				DAC2E209196BDBBA00569B1B /* DOUAudioStreamer+Options.h */,
+				DAC2E20A196BDBBA00569B1B /* DOUAudioStreamer+Options.m */,
+				DAC2E20B196BDBBA00569B1B /* DOUAudioVisualizer.h */,
+				DAC2E20C196BDBBA00569B1B /* DOUAudioVisualizer.m */,
+				DAC2E20D196BDBBA00569B1B /* DOUEAGL1View.h */,
+				DAC2E20E196BDBBA00569B1B /* DOUEAGL1View.m */,
+				DAC2E20F196BDBBA00569B1B /* DOUEAGLView.h */,
+				DAC2E210196BDBBA00569B1B /* DOUEAGLView.m */,
+				DAC2E211196BDBBA00569B1B /* DOUMPMediaLibraryAssetLoader.h */,
+				DAC2E212196BDBBA00569B1B /* DOUMPMediaLibraryAssetLoader.m */,
+				DAC2E213196BDBBA00569B1B /* DOUSimpleHTTPRequest.h */,
+				DAC2E214196BDBBA00569B1B /* DOUSimpleHTTPRequest.m */,
+				DAC2E215196BDBBA00569B1B /* NSData+DOUMappedFile.h */,
+				DAC2E216196BDBBA00569B1B /* NSData+DOUMappedFile.m */,
+			);
+			name = BD_FM;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4C3891E171B9D87009D6124 /* WJFM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4C38942171B9D87009D6124 /* Build configuration list for PBXNativeTarget "WJFM" */;
+			buildPhases = (
+				0EEC725AA1FD45498B439C99 /* Check Pods Manifest.lock */,
+				D4C3891B171B9D87009D6124 /* Sources */,
+				D4C3891C171B9D87009D6124 /* Frameworks */,
+				D4C3891D171B9D87009D6124 /* Resources */,
+				FD5380FD26134287A81386CF /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WJFM;
+			productName = DOUASDemo;
+			productReference = D4C3891F171B9D87009D6124 /* WJFM.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4C38917171B9D87009D6124 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Douban Inc.";
+			};
+			buildConfigurationList = D4C3891A171B9D87009D6124 /* Build configuration list for PBXProject "WJFM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				fr,
+			);
+			mainGroup = D4C38916171B9D87009D6124;
+			productRefGroup = D4C38920171B9D87009D6124 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4C3891E171B9D87009D6124 /* WJFM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4C3891D171B9D87009D6124 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185EE34E1945AF36006EB1CD /* DownLoadTableViewCell.xib in Resources */,
+				18C7014219485D1B00A14D4F /* MainViewController.xib in Resources */,
+				D4C3892D171B9D87009D6124 /* InfoPlist.strings in Resources */,
+				18CFB997194AE65000ADC133 /* AlbumCellTableViewCell.xib in Resources */,
+				18EDEF7C194991DD00DF1B34 /* play_ctrl_pause.png in Resources */,
+				18CFB99E194AEEA700ADC133 /* MusicCell.xib in Resources */,
+				188A0764194D73F5005BC00F /* FavouriteAlbumTableViewController.xib in Resources */,
+				DAC2E166196BCEBD00569B1B /* mplaceholder.png in Resources */,
+				18EDEF881949A75B00DF1B34 /* default_album_sml.jpg in Resources */,
+				DAAAB4B919AD8AEB00288B09 /* Icon@2x.png in Resources */,
+				18CFB98F194AA0CB00ADC133 /* SettingTableViewCell.xib in Resources */,
+				DAAEE68C19AEFDDA00D315F9 /* MyMPMoviePlayerViewController.xib in Resources */,
+				18EDEF861949929B00DF1B34 /* play_btn_prev.png in Resources */,
+				DAAAB4BD19AD8B6400288B09 /* Icon.png in Resources */,
+				18EDEF8A1949B1C800DF1B34 /* default_album_mid.jpg in Resources */,
+				DAAAB4BF19AD8B8A00288B09 /* Icon-smail.png in Resources */,
+				18CFB9A8194AF10D00ADC133 /* ic_player_fav_selected_highlight.png in Resources */,
+				18CFB999194AEAAE00ADC133 /* RSS.png in Resources */,
+				1856B27A1946A1BA0013CDB2 /* DownLoadViewController.xib in Resources */,
+				18EDEF851949929B00DF1B34 /* play_btn_prev_prs.png in Resources */,
+				18CFB9A0194AF04E00ADC133 /* download.png in Resources */,
+				18F978C619430B97006900E1 /* DownloadTableViewController.xib in Resources */,
+				18EDEF7B194991DD00DF1B34 /* play_ctrl_pause_prs.png in Resources */,
+				D4C38935171B9D87009D6124 /* Default.png in Resources */,
+				18C701331947FFC200A14D4F /* MusicPlayViewController.xib in Resources */,
+				DAAAB4BB19AD8B3E00288B09 /* Icon-smail@2x.png in Resources */,
+				188A0758194D3832005BC00F /* FavouriteViewController.xib in Resources */,
+				D4C38937171B9D87009D6124 /* Default@2x.png in Resources */,
+				18F978BF1942BF25006900E1 /* Localizable.strings in Resources */,
+				18B21456193EC50B00BD9CBE /* ChannelTableViewController.xib in Resources */,
+				18EDEF7D194991DD00DF1B34 /* play_ctrl_play_prs.png in Resources */,
+				18B21458193ECD8C00BD9CBE /* placeholder.png in Resources */,
+				DAC2E235196BEA1D00569B1B /* PlayerViewController.xib in Resources */,
+				188A075F194D7193005BC00F /* FavouriteTableViewController.xib in Resources */,
+				18EDEF831949929B00DF1B34 /* play_btn_next_prs.png in Resources */,
+				188A075A194D61CC005BC00F /* like_enabled.png in Resources */,
+				18CFB9A7194AF10D00ADC133 /* ic_player_fav_disable.png in Resources */,
+				18CFB98A194A9A8600ADC133 /* SettingMenuViewController.xib in Resources */,
+				18EDEF7E194991DD00DF1B34 /* play_ctrl_play.png in Resources */,
+				DA8CB0DF19AB424300968D7A /* HistoryTableViewController.xib in Resources */,
+				18EDEF841949929B00DF1B34 /* play_btn_next.png in Resources */,
+				181B9745193D80E100CEDE91 /* MusicTableViewMenuController.xib in Resources */,
+				18394C7B19471B320091A3B3 /* DownLoadedViewController.xib in Resources */,
+				D4C38939171B9D87009D6124 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EEC725AA1FD45498B439C99 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD5380FD26134287A81386CF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4C3891B171B9D87009D6124 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				188A075E194D7193005BC00F /* FavouriteTableViewController.m in Sources */,
+				18394C7A19471B320091A3B3 /* DownLoadedViewController.m in Sources */,
+				181B9744193D80E100CEDE91 /* MusicTableViewMenuController.m in Sources */,
+				18CFB989194A9A8600ADC133 /* SettingMenuViewController.m in Sources */,
+				D4C3892F171B9D87009D6124 /* main.m in Sources */,
+				188A0763194D73F5005BC00F /* FavouriteAlbumTableViewController.m in Sources */,
+				183984FA193721EA00B43B24 /* XMLBrodCastItem.m in Sources */,
+				181B974F193D8FC200CEDE91 /* IIWrapController.m in Sources */,
+				18CFB98E194AA0CB00ADC133 /* SettingTableViewCell.m in Sources */,
+				183984FE193723B300B43B24 /* XMLTools.m in Sources */,
+				DAAF65F519B5C86D006EC48D /* BaseTableViewController.m in Sources */,
+				18F978BD1942BF25006900E1 /* NSFileManager+TCBlobDownload.m in Sources */,
+				18CFB992194AAA0D00ADC133 /* SettingBean.m in Sources */,
+				DAC2E226196BDBBA00569B1B /* DOUEAGLView.m in Sources */,
+				181B9781193DB6FE00CEDE91 /* MusicMenuAllBean.m in Sources */,
+				DAC2E221196BDBBA00569B1B /* DOUAudioSpatialAnalyzer.m in Sources */,
+				D4C38933171B9D87009D6124 /* AppDelegate.m in Sources */,
+				18F978C01942BF25006900E1 /* TCBlobDownloader.m in Sources */,
+				DAC2E229196BDBBA00569B1B /* NSData+DOUMappedFile.m in Sources */,
+				18C701321947FFC200A14D4F /* MusicPlayViewController.m in Sources */,
+				DAC2E220196BDBBA00569B1B /* DOUAudioRenderer.m in Sources */,
+				DAC2E227196BDBBA00569B1B /* DOUMPMediaLibraryAssetLoader.m in Sources */,
+				DAC2E21A196BDBBA00569B1B /* DOUAudioEventLoop.m in Sources */,
+				181B974D193D8FC200CEDE91 /* IISideController.m in Sources */,
+				DAC2E21F196BDBBA00569B1B /* DOUAudioPlaybackItem.m in Sources */,
+				DA8CB0DE19AB424300968D7A /* HistoryTableViewController.m in Sources */,
+				18F978BE1942BF25006900E1 /* UIDevice-Hardware.m in Sources */,
+				DAC2E21B196BDBBA00569B1B /* DOUAudioFilePreprocessor.m in Sources */,
+				188A0757194D3832005BC00F /* FavouriteViewController.m in Sources */,
+				18CFB996194AE65000ADC133 /* AlbumCellTableViewCell.m in Sources */,
+				1856B2791946A1BA0013CDB2 /* DownLoadViewController.m in Sources */,
+				DAC2E21D196BDBBA00569B1B /* DOUAudioFrequencyAnalyzer.m in Sources */,
+				18F9790019432710006900E1 /* SqlTools.m in Sources */,
+				DAC2E21C196BDBBA00569B1B /* DOUAudioFileProvider.m in Sources */,
+				D4F5B29618A5F6B90063865C /* PlayerViewController.m in Sources */,
+				181B974E193D8FC200CEDE91 /* IIViewDeckController.m in Sources */,
+				18CFB99D194AEEA700ADC133 /* MusicCell.m in Sources */,
+				181B977B193D950600CEDE91 /* JsonTools.m in Sources */,
+				18F978FF19432710006900E1 /* NoteBean.m in Sources */,
+				DAAEE69419AF302500D315F9 /* BaseUINavigationController.m in Sources */,
+				DAC2E228196BDBBA00569B1B /* DOUSimpleHTTPRequest.m in Sources */,
+				185EE34D1945AF36006EB1CD /* DownLoadTableViewCell.m in Sources */,
+				DAC2E222196BDBBA00569B1B /* DOUAudioStreamer.m in Sources */,
+				DAC2E217196BDBBA00569B1B /* DOUAudioAnalyzer.m in Sources */,
+				DAC2E225196BDBBA00569B1B /* DOUEAGL1View.m in Sources */,
+				183984F7193720CB00B43B24 /* XMLBrodCast.m in Sources */,
+				183984EF1937181500B43B24 /* GDataXMLNode.m in Sources */,
+				DAC2E218196BDBBA00569B1B /* DOUAudioAnalyzer+Default.m in Sources */,
+				DAAEE68B19AEFDDA00D315F9 /* MyMPMoviePlayerViewController.m in Sources */,
+				DAC2E223196BDBBA00569B1B /* DOUAudioStreamer+Options.m in Sources */,
+				18B21455193EC50B00BD9CBE /* ChannelTableViewController.m in Sources */,
+				1856B2831946F6090013CDB2 /* StringTools.m in Sources */,
+				181B977A193D950600CEDE91 /* HttpTools.m in Sources */,
+				D4F5B29318A5F3030063865C /* MainViewController.m in Sources */,
+				185EE34319455EA7006EB1CD /* DownLoadTools.m in Sources */,
+				181B977E193DB5E000CEDE91 /* MusicMenuBean.m in Sources */,
+				DAAF65F919B5D111006EC48D /* ViewHelperTools.m in Sources */,
+				D4F5B29018A5F1B70063865C /* Track+Provider.m in Sources */,
+				DAC2E219196BDBBA00569B1B /* DOUAudioDecoder.m in Sources */,
+				18F978C519430B97006900E1 /* DownloadTableViewController.m in Sources */,
+				D4F5B28D18A5F0C70063865C /* Track.m in Sources */,
+				DAAF65FC19B5D2AF006EC48D /* BaseViewController.m in Sources */,
+				DAC2E21E196BDBBA00569B1B /* DOUAudioLPCM.m in Sources */,
+				18F978C11942BF25006900E1 /* TCBlobDownloadManager.m in Sources */,
+				DAC2E224196BDBBA00569B1B /* DOUAudioVisualizer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18F978B41942BF25006900E1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18F978B51942BF25006900E1 /* en */,
+				18F978B61942BF25006900E1 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		D4C3892B171B9D87009D6124 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4C3892C171B9D87009D6124 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D4C38940171B9D87009D6124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D4C38941171B9D87009D6124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4C38943171B9D87009D6124 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCC3A38A30EE47EFA20E797E /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_MODULES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DOUASDemo/WJFM-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "DOUASDemo/WJFM-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-ObjC",
+				);
+				PRODUCT_NAME = WJFM;
+				SDKROOT = iphoneos7.1;
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D4C38944171B9D87009D6124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCC3A38A30EE47EFA20E797E /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_MODULES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DOUASDemo/WJFM-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "DOUASDemo/WJFM-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lxml2",
+					"-ObjC",
+				);
+				PRODUCT_NAME = WJFM;
+				SDKROOT = iphoneos7.1;
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4C3891A171B9D87009D6124 /* Build configuration list for PBXProject "WJFM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4C38940171B9D87009D6124 /* Debug */,
+				D4C38941171B9D87009D6124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4C38942171B9D87009D6124 /* Build configuration list for PBXNativeTarget "WJFM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4C38943171B9D87009D6124 /* Debug */,
+				D4C38944171B9D87009D6124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4C38917171B9D87009D6124 /* Project object */;
+}

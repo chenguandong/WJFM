@@ -1,0 +1,7 @@
+platform:ios,'6.1'
+pod "AFNetworking", "~> 2.0"
+pod 'FMDB'
+pod 'SVProgressHUD'
+pod 'SDWebImage', '~>3.6'
+pod 'MarqueeLabel'
+pod 'LBBlurredImage'

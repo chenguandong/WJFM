@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>311F272A-5F23-4F78-8BDF-929F2F4A8AED</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WJFM</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>307C32C4-723B-45E9-8E99-D48068B19FEE</key>
+		<string>file:///Users/zero/zeropartner/my_project/GitHub/WaJiFM/</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WaJiFM/WJFM.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>307C32C4-723B-45E9-8E99-D48068B19FEE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>file:///Users/zero/zeropartner/my_project/GitHub/WaJiFM/</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>307C32C4-723B-45E9-8E99-D48068B19FEE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>307C32C4-723B-45E9-8E99-D48068B19FEE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>addHistory</string>
+		</dict>
+	</array>
+</dict>
+</plist>

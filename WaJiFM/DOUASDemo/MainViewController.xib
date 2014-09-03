@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
+            <connections>
+                <outlet property="musicView" destination="roY-iT-fbw" id="eqx-sF-geE"/>
+                <outlet property="tableView" destination="Bky-gV-z8n" id="vLI-6O-szf"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Kfe-I0-pBa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Bky-gV-z8n">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="502"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="502" id="IGo-dZ-WTj"/>
+                    </constraints>
+                    <color key="sectionIndexBackgroundColor" red="1" green="0.22988957303977997" blue="0.22543874654548768" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="K0g-dl-QzP"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="bnd-Ya-oGt"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="roY-iT-fbw">
+                    <rect key="frame" x="0.0" y="502" width="320" height="66"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.090196080505847931" green="0.44705885648727417" blue="0.66666668653488159" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="66" id="7dU-B1-Iek"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Bky-gV-z8n" firstAttribute="leading" secondItem="roY-iT-fbw" secondAttribute="leading" id="24u-Iq-fhA"/>
+                <constraint firstItem="Bky-gV-z8n" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9gn-UA-Kvp"/>
+                <constraint firstItem="Bky-gV-z8n" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HJn-x1-wyt"/>
+                <constraint firstItem="roY-iT-fbw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HdW-RD-YbN"/>
+                <constraint firstItem="roY-iT-fbw" firstAttribute="top" secondItem="Bky-gV-z8n" secondAttribute="bottom" id="L5v-yG-hQh"/>
+                <constraint firstItem="roY-iT-fbw" firstAttribute="top" secondItem="Bky-gV-z8n" secondAttribute="bottom" id="Rve-Er-3Y7"/>
+                <constraint firstItem="Bky-gV-z8n" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ssw-wi-gMS"/>
+                <constraint firstAttribute="bottom" secondItem="roY-iT-fbw" secondAttribute="bottom" id="Y3V-i7-03B"/>
+                <constraint firstAttribute="trailing" secondItem="Bky-gV-z8n" secondAttribute="trailing" id="ZFR-mB-752"/>
+                <constraint firstItem="roY-iT-fbw" firstAttribute="trailing" secondItem="Bky-gV-z8n" secondAttribute="trailing" id="oyV-5i-IZM"/>
+                <constraint firstAttribute="trailing" secondItem="roY-iT-fbw" secondAttribute="trailing" id="tgA-DV-d1z"/>
+                <constraint firstAttribute="trailing" secondItem="Bky-gV-z8n" secondAttribute="trailing" id="uuB-6o-ZlY"/>
+                <constraint firstItem="Bky-gV-z8n" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xhe-2J-DKF"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,36 @@
+//
+// Prefix header for all source files of the 'DOUASDemo' target in the 'DOUASDemo' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+  #import <UIKit/UIKit.h>
+  #import <Foundation/Foundation.h>
+#endif
+
+
+#define IOS7 [[[UIDevice currentDevice]systemVersion] floatValue] >= 7.0
+
+#import "SVProgressHUD.h"
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#import "AFNetworking/AFHTTPRequestOperationManager.h"
+
+#import "BaseTableViewController.h"
+#import "BaseViewController.h"
+
+#define Default_Nav_Color [UIColor orangeColor]
+#define SharedAppDelegate ((AppDelegate*)[[UIApplication sharedApplication] delegate])
+#import <SDWebImage/UIImageView+WebCache.h>
+#define MUSIC_HTTP_PATH  @"https://raw.githubusercontent.com/chenguandong/cgd_data_github/master/music.json"
+
+#define kDownloadPath [NSString pathWithComponents:@[NSTemporaryDirectory(), @"music"]]
+

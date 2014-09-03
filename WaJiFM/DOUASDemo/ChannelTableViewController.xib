@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChannelTableViewController">
+            <connections>
+                <outlet property="headDownloadButton" destination="dQr-dJ-ORd" id="XP3-9m-WMN"/>
+                <outlet property="headImg" destination="2lr-AN-RBU" id="woB-f1-UZv"/>
+                <outlet property="headLoveButton" destination="cZX-6a-Y5T" id="EPf-V4-aUJ"/>
+                <outlet property="headTitle" destination="cLM-QD-5aB" id="blh-2x-Gnt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <view key="tableHeaderView" contentMode="scaleToFill" id="UGT-ZG-vOl">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2lr-AN-RBU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQr-dJ-ORd">
+                        <rect key="frame" x="270" y="146" width="45" height="45"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" image="download.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="albumDownload:" destination="-1" eventType="touchUpInside" id="wao-Sz-j0t"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZX-6a-Y5T">
+                        <rect key="frame" x="217" y="146" width="45" height="45"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="QGx-1S-0V5"/>
+                        </constraints>
+                        <state key="normal" image="ic_player_fav_disable.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="albumLove:" destination="-1" eventType="touchUpInside" id="0uZ-LP-QYY"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLM-QD-5aB" customClass="MarqueeLabel">
+                        <rect key="frame" x="47" y="20" width="215" height="43"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="dQr-dJ-ORd" firstAttribute="top" secondItem="UGT-ZG-vOl" secondAttribute="top" constant="146" id="1Ph-dS-Dom"/>
+                    <constraint firstAttribute="bottom" secondItem="cZX-6a-Y5T" secondAttribute="bottom" constant="-1" id="3EN-WQ-Tvx"/>
+                    <constraint firstAttribute="trailing" secondItem="dQr-dJ-ORd" secondAttribute="trailing" constant="5" id="6xB-BX-Qof"/>
+                    <constraint firstItem="cZX-6a-Y5T" firstAttribute="top" secondItem="dQr-dJ-ORd" secondAttribute="top" id="N4r-1i-aFH"/>
+                    <constraint firstAttribute="trailing" secondItem="2lr-AN-RBU" secondAttribute="trailing" id="Ni6-Bs-3QK"/>
+                    <constraint firstItem="2lr-AN-RBU" firstAttribute="leading" secondItem="UGT-ZG-vOl" secondAttribute="leading" id="X8M-fu-Vnq"/>
+                    <constraint firstItem="cLM-QD-5aB" firstAttribute="top" secondItem="UGT-ZG-vOl" secondAttribute="top" constant="20" symbolic="YES" id="cOf-il-nky"/>
+                    <constraint firstItem="dQr-dJ-ORd" firstAttribute="leading" secondItem="cZX-6a-Y5T" secondAttribute="trailing" constant="8" id="g6c-Y7-SCg"/>
+                    <constraint firstItem="cZX-6a-Y5T" firstAttribute="bottom" secondItem="dQr-dJ-ORd" secondAttribute="bottom" id="lwG-ht-TEV"/>
+                    <constraint firstAttribute="trailing" secondItem="cLM-QD-5aB" secondAttribute="trailing" constant="58" id="pQq-VT-XwJ"/>
+                    <constraint firstAttribute="bottom" secondItem="2lr-AN-RBU" secondAttribute="bottom" id="tIj-q6-kMg"/>
+                    <constraint firstItem="cZX-6a-Y5T" firstAttribute="top" secondItem="cLM-QD-5aB" secondAttribute="bottom" constant="83" id="tU5-M3-KWl"/>
+                    <constraint firstItem="2lr-AN-RBU" firstAttribute="top" secondItem="UGT-ZG-vOl" secondAttribute="top" id="tUG-st-dLG"/>
+                    <constraint firstItem="cZX-6a-Y5T" firstAttribute="trailing" secondItem="cLM-QD-5aB" secondAttribute="trailing" id="xQx-x6-cJH"/>
+                    <constraint firstItem="cLM-QD-5aB" firstAttribute="leading" secondItem="UGT-ZG-vOl" secondAttribute="leading" constant="47" id="zso-6z-78d"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="dataSource" destination="-1" id="Tng-2m-Rnh"/>
+                <outlet property="delegate" destination="-1" id="9aC-8N-iBw"/>
+            </connections>
+        </tableView>
+    </objects>
+    <resources>
+        <image name="download.png" width="72" height="72"/>
+        <image name="ic_player_fav_disable.png" width="96" height="72"/>
+    </resources>
+</document>
