@@ -60,7 +60,7 @@ static PlayerViewController *sharedRootController = nil;
 }
 
 -(void)viewDidLoad{
-    
+
 
      _musicColl = [MusicPlayViewController sharedController];
     
@@ -104,10 +104,7 @@ static PlayerViewController *sharedRootController = nil;
     
     [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(_timerAction:) userInfo:nil repeats:YES];
     
-    if (IOS7) {
-        self.edgesForExtendedLayout = UIRectEdgeNone;
-        self.automaticallyAdjustsScrollViewInsets = NO;
-    }
+   
     
 
 }
@@ -139,6 +136,8 @@ static PlayerViewController *sharedRootController = nil;
         NSString *title = [NSString stringWithFormat:@"%@ - %@", track.artist, track.title];
         [_titleLabel setText:title];
         
+        self.title =title;
+        
         _streamer = [DOUAudioStreamer streamerWithAudioFile:track];
         [_streamer addObserver:self forKeyPath:@"status" options:NSKeyValueObservingOptionNew context:kStatusKVOKey];
         [_streamer addObserver:self forKeyPath:@"duration" options:NSKeyValueObservingOptionNew context:kDurationKVOKey];
@@ -155,6 +154,7 @@ static PlayerViewController *sharedRootController = nil;
         
         _audioImgView.hidden = YES;
         
+//        [_albumImageView setImage:[NSURL URLWithString:track.audioImg]];
         
         [_audioImgView setImageWithURL:[NSURL URLWithString:track.audioImg] placeholderImage:[UIImage imageNamed:@"80.jpg"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
             if (!error) {
@@ -162,7 +162,7 @@ static PlayerViewController *sharedRootController = nil;
                     _audioImgView.hidden = NO;
                 }];
                 
-
+                _albumImageView.image = _audioImgView.image;
             }
             if (error) {
                 _audioImgView.hidden = NO;
