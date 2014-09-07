@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13F25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
@@ -11,6 +11,8 @@
                 <outlet property="headImg" destination="2lr-AN-RBU" id="woB-f1-UZv"/>
                 <outlet property="headLoveButton" destination="cZX-6a-Y5T" id="EPf-V4-aUJ"/>
                 <outlet property="headTitle" destination="cLM-QD-5aB" id="blh-2x-Gnt"/>
+                <outlet property="loadMoreText" destination="D47-QF-Jqh" id="EBX-HH-D91"/>
+                <outlet property="loadMoreView" destination="9IZ-A8-4xG" id="hY9-4M-tde"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -84,6 +86,30 @@
                 <outlet property="delegate" destination="-1" id="9aC-8N-iBw"/>
             </connections>
         </tableView>
+        <view contentMode="scaleToFill" id="9IZ-A8-4xG">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="没有更多数据了" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D47-QF-Jqh">
+                    <rect key="frame" x="81" y="10" width="158" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="158" id="k7J-nm-q8P"/>
+                        <constraint firstAttribute="height" constant="34" id="kNS-Su-EQK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="D47-QF-Jqh" secondAttribute="bottom" constant="9" id="CaX-ee-pjC"/>
+                <constraint firstAttribute="centerX" secondItem="D47-QF-Jqh" secondAttribute="centerX" id="OYQ-eJ-jaQ"/>
+                <constraint firstItem="D47-QF-Jqh" firstAttribute="top" secondItem="9IZ-A8-4xG" secondAttribute="top" constant="10" id="z7r-D7-bS6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
     </objects>
     <resources>
         <image name="download.png" width="72" height="72"/>

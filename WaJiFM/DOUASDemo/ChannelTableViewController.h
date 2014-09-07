@@ -11,11 +11,17 @@
 #import "MusicMenuBean.h"
 @class MarqueeLabel;
 @interface ChannelTableViewController : BaseTableViewController
-    @property(nonatomic,strong)NSArray *channelArray;
+//当前显示的数据
+@property(nonatomic,strong)NSMutableArray *channelArray;
+//总数据
+@property(nonatomic,strong)NSArray *allChannelArray;
+@property (weak, nonatomic) IBOutlet UILabel *loadMoreText;
+
 @property (weak, nonatomic) IBOutlet UIButton *headDownloadButton;
 @property (weak, nonatomic) IBOutlet UIButton *headLoveButton;
 @property (weak, nonatomic) IBOutlet MarqueeLabel *headTitle;
-#pragma mark 
+@property (strong, nonatomic) IBOutlet UIView *loadMoreView;
+
 @property (weak, nonatomic) IBOutlet UIImageView *headImg;
     @property(nonatomic,strong)MusicMenuBean *albumInfo;
 @end

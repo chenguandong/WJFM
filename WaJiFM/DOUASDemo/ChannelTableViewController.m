@@ -22,9 +22,19 @@
 #import "SqlTools.h"
 #import <MediaPlayer/MediaPlayer.h>
 #import "MyMPMoviePlayerViewController.h"
+#import "MJRefresh.h"
 
 #define kDownloadPath [NSString pathWithComponents:@[NSTemporaryDirectory(), @"multipleExample"]]
+const int kPageSize = 10;
 @interface ChannelTableViewController ()
+
+{
+    int pageCount;
+    int pageCountNow ;
+
+    BOOL isFistLoad ;
+    
+}
 
 @end
 
@@ -34,16 +44,52 @@
 {
     [super viewDidLoad];
     
+    isFistLoad = YES;
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    _channelArray  = [NSMutableArray arrayWithCapacity:10];
+    _allChannelArray =[NSArray array];
+    
+    
+  
+    
     [self loadDate];
     [self initHeadView];
     self.tableView.rowHeight = 100;
     
+    [self.tableView addHeaderWithCallback:^{
+       self.loadMoreText.text = @"上拉加载更多";
+        
+        [self.tableView reloadData];
+        
+        [self loadDate];
+
+        
+         [self.tableView setFooterHidden:NO];
+    }];
     
+    [self.tableView addFooterWithCallback:^{
+        
+        if (pageCountNow<pageCount) {
+            [self getMoreData];
+        }else{
+            NSLog(@"数据加载完了...");
+            [self.tableView footerEndRefreshing];
+          
+            [self.tableView setFooterHidden:YES];
+             _loadMoreView.hidden = NO;
+            
+            _loadMoreText.text = @"没有更多数据了";
+            
+        }
+        
+    }];
+    
+
    
     
 }
@@ -119,16 +165,56 @@
 
 -(void)loadDate{
 
-    [SVProgressHUD showWithStatus:@"数据加载中..."];
+    if (isFistLoad) {
+         [SVProgressHUD showWithStatus:@"数据加载中..."];
+        isFistLoad = NO;
+    }
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT,0),^{
         // time-consuming task
         NSDictionary *dic = [XMLTools getBrodCastXML:_albumInfo.link];
-        _channelArray = [dic objectForKey:@"item"];
+        _allChannelArray = [dic objectForKey:@"item"];
         dispatch_async(dispatch_get_main_queue(),^{
             [SVProgressHUD dismiss];
-            [self.tableView reloadData];
+            if (_allChannelArray.count>0) {
+                if (_allChannelArray.count%kPageSize==0) {
+                    pageCount =_allChannelArray.count/kPageSize;
+                }else{
+                
+                    if (_allChannelArray.count<10) {
+                        pageCount = 1;
+                    }else{
+                        pageCount =_allChannelArray.count/kPageSize+1;
+                    }
+                }
+                
+                NSLog(@"总条数:%d",_allChannelArray.count);
+                NSLog(@"总页数:%d",pageCount);
+
+            }
+            if (_allChannelArray.count>0) {
+                pageCountNow = 0;
+                
+                [self.channelArray removeAllObjects];
+                [self getMoreData];
+                [self.tableView headerEndRefreshing];
+                [self.tableView setTableFooterView:_loadMoreView];
+                _loadMoreText.text = @"上拉加载更多";
+            }
         });
     });
+}
+
+-(void)getMoreData{
+     pageCountNow++;
+    NSLog(@"当前页码数:%d",pageCountNow);
+    for (int i  =((pageCountNow-1)*10); i<(pageCountNow*kPageSize>_allChannelArray.count?_allChannelArray.count:pageCountNow*kPageSize); i++) {
+        NSLog(@"i===%d",i);
+        [_channelArray addObject:_allChannelArray[i]];
+    }
+  
+    [self.tableView reloadData];
+    
+    [self.tableView footerEndRefreshing];
 }
 
 - (void)didReceiveMemoryWarning

@@ -322,7 +322,8 @@ static PlayerViewController *sharedRootController = nil;
 - (void)viewWillAppear:(BOOL)animated
 {
   [super viewWillAppear:animated];
-
+   
+    
     if (_currentTrackIndex!=-1) {
         [self _resetStreamer];
     }

@@ -42,6 +42,17 @@
 		18B21455193EC50B00BD9CBE /* ChannelTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B21453193EC50B00BD9CBE /* ChannelTableViewController.m */; };
 		18B21456193EC50B00BD9CBE /* ChannelTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B21454193EC50B00BD9CBE /* ChannelTableViewController.xib */; };
 		18B21458193ECD8C00BD9CBE /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B21457193ECD8C00BD9CBE /* placeholder.png */; };
+		18B7CAA819BC6C430012495E /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18B7CA9819BC6C430012495E /* MJRefresh.bundle */; };
+		18B7CAA919BC6C430012495E /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7CA9B19BC6C430012495E /* MJRefreshBaseView.m */; };
+		18B7CAAA19BC6C430012495E /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7CA9D19BC6C430012495E /* MJRefreshConst.m */; };
+		18B7CAAB19BC6C430012495E /* MJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7CA9F19BC6C430012495E /* MJRefreshFooterView.m */; };
+		18B7CAAC19BC6C430012495E /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7CAA119BC6C430012495E /* MJRefreshHeaderView.m */; };
+		18B7CAAD19BC6C430012495E /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7CAA319BC6C430012495E /* UIScrollView+MJExtension.m */; };
+		18B7CAAE19BC6C430012495E /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7CAA519BC6C430012495E /* UIScrollView+MJRefresh.m */; };
+		18B7CAAF19BC6C430012495E /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B7CAA719BC6C430012495E /* UIView+MJExtension.m */; };
+		18B7CAB319BC91AE0012495E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B7CAB219BC91AE0012495E /* Default-568h@2x.png */; };
+		18B7CAB619BC92BE0012495E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B7CAB419BC92BE0012495E /* Default.png */; };
+		18B7CAB719BC92BE0012495E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B7CAB519BC92BE0012495E /* Default@2x.png */; };
 		18C701321947FFC200A14D4F /* MusicPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C701301947FFC200A14D4F /* MusicPlayViewController.m */; };
 		18C701331947FFC200A14D4F /* MusicPlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C701311947FFC200A14D4F /* MusicPlayViewController.xib */; };
 		18C7014219485D1B00A14D4F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18C7014119485D1A00A14D4F /* MainViewController.xib */; };
@@ -89,9 +100,6 @@
 		D4C3892D171B9D87009D6124 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4C3892B171B9D87009D6124 /* InfoPlist.strings */; };
 		D4C3892F171B9D87009D6124 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C3892E171B9D87009D6124 /* main.m */; };
 		D4C38933171B9D87009D6124 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C38932171B9D87009D6124 /* AppDelegate.m */; };
-		D4C38935171B9D87009D6124 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D4C38934171B9D87009D6124 /* Default.png */; };
-		D4C38937171B9D87009D6124 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4C38936171B9D87009D6124 /* Default@2x.png */; };
-		D4C38939171B9D87009D6124 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D4C38938171B9D87009D6124 /* Default-568h@2x.png */; };
 		D4C38948171B9E36009D6124 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C38947171B9E36009D6124 /* AudioToolbox.framework */; };
 		D4C3894A171B9E3A009D6124 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C38949171B9E3A009D6124 /* CoreAudio.framework */; };
 		D4C3894C171B9E3D009D6124 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C3894B171B9E3D009D6124 /* CFNetwork.framework */; };
@@ -194,6 +202,25 @@
 		18B21453193EC50B00BD9CBE /* ChannelTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelTableViewController.m; sourceTree = "<group>"; };
 		18B21454193EC50B00BD9CBE /* ChannelTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChannelTableViewController.xib; sourceTree = "<group>"; };
 		18B21457193ECD8C00BD9CBE /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = placeholder.png; path = DOUASDemo/placeholder.png; sourceTree = "<group>"; };
+		18B7CA9819BC6C430012495E /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
+		18B7CA9919BC6C430012495E /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
+		18B7CA9A19BC6C430012495E /* MJRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBaseView.h; sourceTree = "<group>"; };
+		18B7CA9B19BC6C430012495E /* MJRefreshBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBaseView.m; sourceTree = "<group>"; };
+		18B7CA9C19BC6C430012495E /* MJRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConst.h; sourceTree = "<group>"; };
+		18B7CA9D19BC6C430012495E /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConst.m; sourceTree = "<group>"; };
+		18B7CA9E19BC6C430012495E /* MJRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooterView.h; sourceTree = "<group>"; };
+		18B7CA9F19BC6C430012495E /* MJRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshFooterView.m; sourceTree = "<group>"; };
+		18B7CAA019BC6C430012495E /* MJRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeaderView.h; sourceTree = "<group>"; };
+		18B7CAA119BC6C430012495E /* MJRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeaderView.m; sourceTree = "<group>"; };
+		18B7CAA219BC6C430012495E /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
+		18B7CAA319BC6C430012495E /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
+		18B7CAA419BC6C430012495E /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
+		18B7CAA519BC6C430012495E /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
+		18B7CAA619BC6C430012495E /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
+		18B7CAA719BC6C430012495E /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		18B7CAB219BC91AE0012495E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		18B7CAB419BC92BE0012495E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		18B7CAB519BC92BE0012495E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		18C7012F1947FFC200A14D4F /* MusicPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayViewController.h; sourceTree = "<group>"; };
 		18C701301947FFC200A14D4F /* MusicPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayViewController.m; sourceTree = "<group>"; };
 		18C701311947FFC200A14D4F /* MusicPlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicPlayViewController.xib; sourceTree = "<group>"; };
@@ -261,9 +288,6 @@
 		D4C38930171B9D87009D6124 /* WJFM-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WJFM-Prefix.pch"; sourceTree = "<group>"; };
 		D4C38931171B9D87009D6124 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D4C38932171B9D87009D6124 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D4C38934171B9D87009D6124 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		D4C38936171B9D87009D6124 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		D4C38938171B9D87009D6124 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D4C38947171B9E36009D6124 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D4C38949171B9E3A009D6124 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		D4C3894B171B9E3D009D6124 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -420,6 +444,7 @@
 		183984EB1937180500B43B24 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				18B7CA9719BC6C430012495E /* MJRefresh */,
 				DAC2E1EC196BDBA200569B1B /* BD_FM */,
 				18F978AE1942BF25006900E1 /* TCBlobDownload */,
 				181B9746193D8FC200CEDE91 /* ViewDeck */,
@@ -522,6 +547,29 @@
 			);
 			name = IMG;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		18B7CA9719BC6C430012495E /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				18B7CA9819BC6C430012495E /* MJRefresh.bundle */,
+				18B7CA9919BC6C430012495E /* MJRefresh.h */,
+				18B7CA9A19BC6C430012495E /* MJRefreshBaseView.h */,
+				18B7CA9B19BC6C430012495E /* MJRefreshBaseView.m */,
+				18B7CA9C19BC6C430012495E /* MJRefreshConst.h */,
+				18B7CA9D19BC6C430012495E /* MJRefreshConst.m */,
+				18B7CA9E19BC6C430012495E /* MJRefreshFooterView.h */,
+				18B7CA9F19BC6C430012495E /* MJRefreshFooterView.m */,
+				18B7CAA019BC6C430012495E /* MJRefreshHeaderView.h */,
+				18B7CAA119BC6C430012495E /* MJRefreshHeaderView.m */,
+				18B7CAA219BC6C430012495E /* UIScrollView+MJExtension.h */,
+				18B7CAA319BC6C430012495E /* UIScrollView+MJExtension.m */,
+				18B7CAA419BC6C430012495E /* UIScrollView+MJRefresh.h */,
+				18B7CAA519BC6C430012495E /* UIScrollView+MJRefresh.m */,
+				18B7CAA619BC6C430012495E /* UIView+MJExtension.h */,
+				18B7CAA719BC6C430012495E /* UIView+MJExtension.m */,
+			);
+			path = MJRefresh;
 			sourceTree = "<group>";
 		};
 		18C7012E1947FF2200A14D4F /* view */ = {
@@ -640,9 +688,9 @@
 				D4C3892B171B9D87009D6124 /* InfoPlist.strings */,
 				D4C3892E171B9D87009D6124 /* main.m */,
 				D4C38930171B9D87009D6124 /* WJFM-Prefix.pch */,
-				D4C38934171B9D87009D6124 /* Default.png */,
-				D4C38936171B9D87009D6124 /* Default@2x.png */,
-				D4C38938171B9D87009D6124 /* Default-568h@2x.png */,
+				18B7CAB419BC92BE0012495E /* Default.png */,
+				18B7CAB519BC92BE0012495E /* Default@2x.png */,
+				18B7CAB219BC91AE0012495E /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -810,6 +858,7 @@
 				18CFB997194AE65000ADC133 /* AlbumCellTableViewCell.xib in Resources */,
 				18EDEF7C194991DD00DF1B34 /* play_ctrl_pause.png in Resources */,
 				1898E1CD19BB3F560009F272 /* 80.jpg in Resources */,
+				18B7CAB719BC92BE0012495E /* Default@2x.png in Resources */,
 				18CFB99E194AEEA700ADC133 /* MusicCell.xib in Resources */,
 				188A0764194D73F5005BC00F /* FavouriteAlbumTableViewController.xib in Resources */,
 				DAC2E166196BCEBD00569B1B /* mplaceholder.png in Resources */,
@@ -817,6 +866,7 @@
 				DAAAB4B919AD8AEB00288B09 /* Icon@2x.png in Resources */,
 				18CFB98F194AA0CB00ADC133 /* SettingTableViewCell.xib in Resources */,
 				DAAEE68C19AEFDDA00D315F9 /* MyMPMoviePlayerViewController.xib in Resources */,
+				18B7CAB619BC92BE0012495E /* Default.png in Resources */,
 				18EDEF861949929B00DF1B34 /* play_btn_prev.png in Resources */,
 				DAAAB4BD19AD8B6400288B09 /* Icon.png in Resources */,
 				18EDEF8A1949B1C800DF1B34 /* default_album_mid.jpg in Resources */,
@@ -829,11 +879,10 @@
 				1898E1CF19BB40900009F272 /* IMG_20130907_172404_701.jpg in Resources */,
 				18F978C619430B97006900E1 /* DownloadTableViewController.xib in Resources */,
 				18EDEF7B194991DD00DF1B34 /* play_ctrl_pause_prs.png in Resources */,
-				D4C38935171B9D87009D6124 /* Default.png in Resources */,
 				18C701331947FFC200A14D4F /* MusicPlayViewController.xib in Resources */,
 				DAAAB4BB19AD8B3E00288B09 /* Icon-smail@2x.png in Resources */,
 				188A0758194D3832005BC00F /* FavouriteViewController.xib in Resources */,
-				D4C38937171B9D87009D6124 /* Default@2x.png in Resources */,
+				18B7CAB319BC91AE0012495E /* Default-568h@2x.png in Resources */,
 				18F978BF1942BF25006900E1 /* Localizable.strings in Resources */,
 				18B21456193EC50B00BD9CBE /* ChannelTableViewController.xib in Resources */,
 				18EDEF7D194991DD00DF1B34 /* play_ctrl_play_prs.png in Resources */,
@@ -847,9 +896,9 @@
 				18EDEF7E194991DD00DF1B34 /* play_ctrl_play.png in Resources */,
 				DA8CB0DF19AB424300968D7A /* HistoryTableViewController.xib in Resources */,
 				18EDEF841949929B00DF1B34 /* play_btn_next.png in Resources */,
+				18B7CAA819BC6C430012495E /* MJRefresh.bundle in Resources */,
 				181B9745193D80E100CEDE91 /* MusicTableViewMenuController.xib in Resources */,
 				18394C7B19471B320091A3B3 /* DownLoadedViewController.xib in Resources */,
-				D4C38939171B9D87009D6124 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -899,7 +948,9 @@
 				18CFB989194A9A8600ADC133 /* SettingMenuViewController.m in Sources */,
 				D4C3892F171B9D87009D6124 /* main.m in Sources */,
 				188A0763194D73F5005BC00F /* FavouriteAlbumTableViewController.m in Sources */,
+				18B7CAA919BC6C430012495E /* MJRefreshBaseView.m in Sources */,
 				183984FA193721EA00B43B24 /* XMLBrodCastItem.m in Sources */,
+				18B7CAAB19BC6C430012495E /* MJRefreshFooterView.m in Sources */,
 				181B974F193D8FC200CEDE91 /* IIWrapController.m in Sources */,
 				18CFB98E194AA0CB00ADC133 /* SettingTableViewCell.m in Sources */,
 				183984FE193723B300B43B24 /* XMLTools.m in Sources */,
@@ -922,7 +973,9 @@
 				18F978BE1942BF25006900E1 /* UIDevice-Hardware.m in Sources */,
 				DAC2E21B196BDBBA00569B1B /* DOUAudioFilePreprocessor.m in Sources */,
 				188A0757194D3832005BC00F /* FavouriteViewController.m in Sources */,
+				18B7CAAF19BC6C430012495E /* UIView+MJExtension.m in Sources */,
 				18CFB996194AE65000ADC133 /* AlbumCellTableViewCell.m in Sources */,
+				18B7CAAE19BC6C430012495E /* UIScrollView+MJRefresh.m in Sources */,
 				1856B2791946A1BA0013CDB2 /* DownLoadViewController.m in Sources */,
 				DAC2E21D196BDBBA00569B1B /* DOUAudioFrequencyAnalyzer.m in Sources */,
 				18F9790019432710006900E1 /* SqlTools.m in Sources */,
@@ -935,6 +988,7 @@
 				DAAEE69419AF302500D315F9 /* BaseUINavigationController.m in Sources */,
 				DAC2E228196BDBBA00569B1B /* DOUSimpleHTTPRequest.m in Sources */,
 				185EE34D1945AF36006EB1CD /* DownLoadTableViewCell.m in Sources */,
+				18B7CAAD19BC6C430012495E /* UIScrollView+MJExtension.m in Sources */,
 				DAC2E222196BDBBA00569B1B /* DOUAudioStreamer.m in Sources */,
 				DAC2E217196BDBBA00569B1B /* DOUAudioAnalyzer.m in Sources */,
 				DAC2E225196BDBBA00569B1B /* DOUEAGL1View.m in Sources */,
@@ -948,7 +1002,9 @@
 				181B977A193D950600CEDE91 /* HttpTools.m in Sources */,
 				D4F5B29318A5F3030063865C /* MainViewController.m in Sources */,
 				185EE34319455EA7006EB1CD /* DownLoadTools.m in Sources */,
+				18B7CAAC19BC6C430012495E /* MJRefreshHeaderView.m in Sources */,
 				181B977E193DB5E000CEDE91 /* MusicMenuBean.m in Sources */,
+				18B7CAAA19BC6C430012495E /* MJRefreshConst.m in Sources */,
 				DAAF65F919B5D111006EC48D /* ViewHelperTools.m in Sources */,
 				D4F5B29018A5F1B70063865C /* Track+Provider.m in Sources */,
 				DAC2E219196BDBBA00569B1B /* DOUAudioDecoder.m in Sources */,
