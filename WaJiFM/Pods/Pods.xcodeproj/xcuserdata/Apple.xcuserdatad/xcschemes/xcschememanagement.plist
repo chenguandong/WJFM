@@ -14,6 +14,16 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>Pods-LBBlurredImage.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>Pods-MarqueeLabel.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>Pods-SDWebImage.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -37,7 +47,37 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>32FC916DA3134A1CA6EE183E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>360AAF82CB8B4DF8A1AB9413</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3AFD9768559247FD93533A01</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>543F3FAD3ECB4EE6A1ED152F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7365990CF9514C8085BE6DB7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A2C16560FB53455382A4D540</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D8D3D965C27B4F6BA8BF6C01</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -53,6 +93,11 @@
 			<true/>
 		</dict>
 		<key>E38A13F2777A424096CE38B1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F5C9BA152D1542BBAC2A2284</key>
 		<dict>
 			<key>primary</key>
 			<true/>

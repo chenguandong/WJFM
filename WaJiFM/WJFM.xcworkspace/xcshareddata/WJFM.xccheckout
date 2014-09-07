@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>311F272A-5F23-4F78-8BDF-929F2F4A8AED</string>
+	<string>83CBDFCE-3B59-4026-8BA4-D4EBE903EB76</string>
 	<key>IDESourceControlProjectName</key>
 	<string>WJFM</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>307C32C4-723B-45E9-8E99-D48068B19FEE</key>
-		<string>file:///Users/zero/zeropartner/my_project/GitHub/WaJiFM/</string>
+		<key>D58A8D75-D5A3-49EC-8ABC-9522196C96B6</key>
+		<string>https://github.com/chenguandong/WJFM.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>WaJiFM/WJFM.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>307C32C4-723B-45E9-8E99-D48068B19FEE</key>
+		<key>D58A8D75-D5A3-49EC-8ABC-9522196C96B6</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>file:///Users/zero/zeropartner/my_project/GitHub/WaJiFM/</string>
+	<string>https://github.com/chenguandong/WJFM.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>307C32C4-723B-45E9-8E99-D48068B19FEE</string>
+	<string>D58A8D75-D5A3-49EC-8ABC-9522196C96B6</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>307C32C4-723B-45E9-8E99-D48068B19FEE</string>
+			<string>D58A8D75-D5A3-49EC-8ABC-9522196C96B6</string>
 			<key>IDESourceControlWCCName</key>
-			<string>addHistory</string>
+			<string>WJFM</string>
 		</dict>
 	</array>
 </dict>

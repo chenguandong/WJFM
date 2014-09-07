@@ -155,12 +155,24 @@ static PlayerViewController *sharedRootController = nil;
         
         _audioImgView.hidden = YES;
         
-        [_audioImgView setImageWithURL:[NSURL URLWithString:track.audioImg] placeholderImage:[UIImage imageNamed:@"default_album_mid"]];
         
-        
-        [_audioImgView setImageToBlur:_audioImgView.image blurRadius:0.1 completionBlock:^{
-            _audioImgView.hidden = NO;
+        [_audioImgView setImageWithURL:[NSURL URLWithString:track.audioImg] placeholderImage:[UIImage imageNamed:@"80.jpg"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
+            if (!error) {
+                [_audioImgView setImageToBlur:_audioImgView.image blurRadius:0.1 completionBlock:^{
+                    _audioImgView.hidden = NO;
+                }];
+                
+
+            }
+            if (error) {
+                _audioImgView.hidden = NO;
+                [_audioImgView setImage:[UIImage imageNamed:@"80.jpg"]];
+
+            }
         }];
+        
+        
+       
         
         [self _updateBufferingStatus];
         [self _setupHintForStreamer];

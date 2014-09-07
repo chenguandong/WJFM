@@ -37,6 +37,8 @@
 		188A075F194D7193005BC00F /* FavouriteTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188A075D194D7193005BC00F /* FavouriteTableViewController.xib */; };
 		188A0763194D73F5005BC00F /* FavouriteAlbumTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188A0761194D73F5005BC00F /* FavouriteAlbumTableViewController.m */; };
 		188A0764194D73F5005BC00F /* FavouriteAlbumTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188A0762194D73F5005BC00F /* FavouriteAlbumTableViewController.xib */; };
+		1898E1CD19BB3F560009F272 /* 80.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1898E1CC19BB3F560009F272 /* 80.jpg */; };
+		1898E1CF19BB40900009F272 /* IMG_20130907_172404_701.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1898E1CE19BB40900009F272 /* IMG_20130907_172404_701.jpg */; };
 		18B21455193EC50B00BD9CBE /* ChannelTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B21453193EC50B00BD9CBE /* ChannelTableViewController.m */; };
 		18B21456193EC50B00BD9CBE /* ChannelTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B21454193EC50B00BD9CBE /* ChannelTableViewController.xib */; };
 		18B21458193ECD8C00BD9CBE /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B21457193ECD8C00BD9CBE /* placeholder.png */; };
@@ -186,6 +188,8 @@
 		188A0760194D73F5005BC00F /* FavouriteAlbumTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavouriteAlbumTableViewController.h; sourceTree = "<group>"; };
 		188A0761194D73F5005BC00F /* FavouriteAlbumTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavouriteAlbumTableViewController.m; sourceTree = "<group>"; };
 		188A0762194D73F5005BC00F /* FavouriteAlbumTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavouriteAlbumTableViewController.xib; sourceTree = "<group>"; };
+		1898E1CC19BB3F560009F272 /* 80.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 80.jpg; sourceTree = "<group>"; };
+		1898E1CE19BB40900009F272 /* IMG_20130907_172404_701.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_20130907_172404_701.jpg; sourceTree = "<group>"; };
 		18B21452193EC50B00BD9CBE /* ChannelTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelTableViewController.h; sourceTree = "<group>"; };
 		18B21453193EC50B00BD9CBE /* ChannelTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelTableViewController.m; sourceTree = "<group>"; };
 		18B21454193EC50B00BD9CBE /* ChannelTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChannelTableViewController.xib; sourceTree = "<group>"; };
@@ -496,6 +500,8 @@
 		18B21459193ECD9700BD9CBE /* IMG */ = {
 			isa = PBXGroup;
 			children = (
+				1898E1CE19BB40900009F272 /* IMG_20130907_172404_701.jpg */,
+				1898E1CC19BB3F560009F272 /* 80.jpg */,
 				18EDEF77194991DD00DF1B34 /* play_ctrl_pause_prs.png */,
 				18EDEF871949A75B00DF1B34 /* default_album_sml.jpg */,
 				18EDEF78194991DD00DF1B34 /* play_ctrl_pause.png */,
@@ -769,6 +775,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Douban Inc.";
+				TargetAttributes = {
+					D4C3891E171B9D87009D6124 = {
+						DevelopmentTeam = 25PEPAG3BC;
+					};
+				};
 			};
 			buildConfigurationList = D4C3891A171B9D87009D6124 /* Build configuration list for PBXProject "WJFM" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -798,6 +809,7 @@
 				D4C3892D171B9D87009D6124 /* InfoPlist.strings in Resources */,
 				18CFB997194AE65000ADC133 /* AlbumCellTableViewCell.xib in Resources */,
 				18EDEF7C194991DD00DF1B34 /* play_ctrl_pause.png in Resources */,
+				1898E1CD19BB3F560009F272 /* 80.jpg in Resources */,
 				18CFB99E194AEEA700ADC133 /* MusicCell.xib in Resources */,
 				188A0764194D73F5005BC00F /* FavouriteAlbumTableViewController.xib in Resources */,
 				DAC2E166196BCEBD00569B1B /* mplaceholder.png in Resources */,
@@ -814,6 +826,7 @@
 				1856B27A1946A1BA0013CDB2 /* DownLoadViewController.xib in Resources */,
 				18EDEF851949929B00DF1B34 /* play_btn_prev_prs.png in Resources */,
 				18CFB9A0194AF04E00ADC133 /* download.png in Resources */,
+				1898E1CF19BB40900009F272 /* IMG_20130907_172404_701.jpg in Resources */,
 				18F978C619430B97006900E1 /* DownloadTableViewController.xib in Resources */,
 				18EDEF7B194991DD00DF1B34 /* play_ctrl_pause_prs.png in Resources */,
 				D4C38935171B9D87009D6124 /* Default.png in Resources */,
@@ -1041,6 +1054,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DOUASDemo/WJFM-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
@@ -1053,6 +1067,7 @@
 				);
 				PRODUCT_NAME = WJFM;
 				SDKROOT = iphoneos7.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1064,6 +1079,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DOUASDemo/WJFM-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
@@ -1076,6 +1092,7 @@
 				);
 				PRODUCT_NAME = WJFM;
 				SDKROOT = iphoneos7.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};

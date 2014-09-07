@@ -7,7 +7,7 @@
 //
 
 #import "BaseTableViewController.h"
-
+#import "UIImageView+LBBlurredImage.h"
 @interface BaseTableViewController ()
 
 @end
@@ -36,6 +36,20 @@
     UIView *view = [UIView new];
     view.backgroundColor = [UIColor clearColor];
     [self.tableView setTableFooterView:view];
+    
+    
+   
+    self.tableView.backgroundColor = [UIColor clearColor];
+    
+    UIImageView *bgImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"80.jpg"]];
+    
+    
+    
+    
+    [bgImageView setImageToBlur:bgImageView.image blurRadius:0.01 completionBlock:^{
+        self.tableView.backgroundView = bgImageView;
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning

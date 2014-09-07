@@ -49,7 +49,8 @@
          self.navigationController.navigationBar.tintColor = Default_Nav_Color;
     }
 
-  
+
+    
     
 }
 
@@ -126,12 +127,15 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
-    
+    //cell.backgroundColor = [UIColor clearColor];
     // Configure the cell...
+    cell.backgroundColor = nil;
     
     MusicMenuAllBean *musicAllBean = _menuArrayData[(NSUInteger)indexPath.row];
    
     cell.textLabel.text =musicAllBean.categoryName;
+    
+    cell.textLabel.textColor = [UIColor whiteColor];
 
     return cell;
 }
