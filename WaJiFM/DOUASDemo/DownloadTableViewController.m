@@ -118,6 +118,7 @@ static DownloadTableViewController *sharedRootController = nil;
     
     cell.sdTitle.text =item.title ;
     [cell.imageView setImageWithURL:[NSURL URLWithString:item.image] placeholderImage:[UIImage imageNamed:@"placeholder"]];
+    cell.backgroundColor = [UIColor clearColor];
     return cell;
 }
 

@@ -27,10 +27,12 @@
 #import "BaseTableViewController.h"
 #import "BaseViewController.h"
 
-#define Default_Nav_Color [UIColor orangeColor]
+#define Default_Nav_Color  [UIColor clearColor]
 #define SharedAppDelegate ((AppDelegate*)[[UIApplication sharedApplication] delegate])
 #import <SDWebImage/UIImageView+WebCache.h>
 #define MUSIC_HTTP_PATH  @"https://raw.githubusercontent.com/chenguandong/cgd_data_github/master/music.json"
 
 #define kDownloadPath [NSString pathWithComponents:@[NSTemporaryDirectory(), @"music"]]
+
+#define kBackgroundImageName @"80.jpg"
 

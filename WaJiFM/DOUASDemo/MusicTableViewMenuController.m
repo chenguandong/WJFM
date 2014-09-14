@@ -35,23 +35,7 @@
     
     self.title = @"分类列表";
     
-    //添加代码
-    if (IOS7)
-    {
-        self.edgesForExtendedLayout = UIRectEdgeNone;               //视图控制器，四条边不指定
-        self.extendedLayoutIncludesOpaqueBars = NO;
-        //不透明的操作栏<br>
-        self.modalPresentationCapturesStatusBarAppearance = NO;
-        self.navigationController.navigationBar.translucent = NO;
-        
-        self.navigationController.navigationBar.barTintColor  = Default_Nav_Color;
-    }else{
-         self.navigationController.navigationBar.tintColor = Default_Nav_Color;
-    }
 
-
-    
-    
 }
 
 

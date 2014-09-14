@@ -41,10 +41,7 @@
    
     self.tableView.backgroundColor = [UIColor clearColor];
     
-    UIImageView *bgImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"80.jpg"]];
-    
-    
-    
+    UIImageView *bgImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:kBackgroundImageName]];
     
     [bgImageView setImageToBlur:bgImageView.image blurRadius:0.01 completionBlock:^{
         self.tableView.backgroundView = bgImageView;

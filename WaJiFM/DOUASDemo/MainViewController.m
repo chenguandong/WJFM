@@ -29,6 +29,7 @@
 #import "AlbumCellTableViewCell.h"
 #import "SettingMenuViewController.h"
 #import "ViewHelperTools.h"
+#import "UIImageView+LBBlurredImage.h"
 @implementation MainViewController
 
 - (void)viewDidLoad
@@ -72,35 +73,39 @@
     
     [musicColl.view addGestureRecognizer:tapGr];
 
-    
-    
-    
-    
-    //添加代码
-    if (IOS7)
-    {
-        self.edgesForExtendedLayout = UIRectEdgeNone;               //视图控制器，四条边不指定
-        self.extendedLayoutIncludesOpaqueBars = NO;
-        //不透明的操作栏<br>
-        self.modalPresentationCapturesStatusBarAppearance = NO;
-        self.navigationController.navigationBar.barTintColor  = Default_Nav_Color;
-        self.navigationController.navigationBar.translucent = NO;
-    }else{
-        self.navigationController.navigationBar.tintColor = Default_Nav_Color;
-    }
-    
+
     
 
     //
 
     [ViewHelperTools hiddenTableSeparator:self.tableView];
+    
+    
+    [self setBaseTableView];
 }
+
+#pragma mark  设置table的属性
+-(void)setBaseTableView{
+
+    UIView *view = [UIView new];
+    view.backgroundColor = [UIColor orangeColor];
+    [self.tableView setTableFooterView:view];
+    
+    
+    UIImageView *bgImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:kBackgroundImageName]];
+    
+    [bgImageView setImageToBlur:bgImageView.image completionBlock:^{
+        self.tableView.backgroundView = bgImageView;
+    }];
+    
+   
+}
+
 
 -(void)jumpSetting{
 
     
     SettingMenuViewController *settingMenuColl= [SettingMenuViewController new];
-
     
     [self.navigationController pushViewController:settingMenuColl animated:YES];
     
@@ -131,9 +136,13 @@
 
 -(void)NOTICOME:(NSNotification*)notification{
     
+    [self.navigationController popToRootViewControllerAnimated:NO];
+    
     _array = [notification object];
 
     [self.tableView reloadData];
+    
+    
 }
 
 #pragma mark - UITableViewDataSource
@@ -165,6 +174,10 @@
                        placeholderImage:[UIImage imageNamed:@"mplaceholder"]];
      
     }
+    cell.backgroundColor = [UIColor clearColor];
+    
+    [cell setSelectedBackgroundView:nil];
+    
   return cell;
 }
 
@@ -172,28 +185,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//  [tableView deselectRowAtIndexPath:indexPath animated:YES];
-//
-//  PlayerViewController *playerViewController = [[PlayerViewController alloc] init];
-//  switch ([indexPath row]) {
-//  case 0:
-//    [playerViewController setTitle:@"Remote Music ♫"];
-//    [playerViewController setTracks:[Track remoteTracks]];
-//    break;
-//
-//  case 1:
-//    [playerViewController setTitle:@"Local Music Library ♫"];
-//    [playerViewController setTracks:[Track musicLibraryTracks]];
-//    break;
-//
-//  default:
-//    abort();
-//  }
-//
-//  [[self navigationController] pushViewController:playerViewController
-//                                         animated:YES];
-    
-    ChannelTableViewController *channelColl = [ChannelTableViewController new];
+
+    ChannelTableViewController *channelColl = [[ChannelTableViewController alloc]init];
     
     channelColl.albumInfo = _array[(NSUInteger)indexPath.row] ;
     

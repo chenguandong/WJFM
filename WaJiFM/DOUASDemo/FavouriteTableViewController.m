@@ -125,7 +125,7 @@
     
     [cell.musicLove setTag:indexPath.row];
     [cell.musicDownloadButton setTag:indexPath.row];
-    
+     cell.backgroundColor = [UIColor clearColor];
     return cell;
     
     

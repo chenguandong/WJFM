@@ -95,6 +95,8 @@
     cell.textLabel.text =musicMenuBean.title ;
     cell.detailTextLabel.text= musicMenuBean.description;
     [cell.imageView setImageWithURL:[NSURL URLWithString:musicMenuBean.image] placeholderImage:[UIImage imageNamed:@"placeholder"]];
+    cell.backgroundColor = [UIColor clearColor];
+    
     return cell;
     
     

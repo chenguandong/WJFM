@@ -15,7 +15,7 @@
  */
 
 #import <UIKit/UIKit.h>
-
+#import "BaseTableViewController.h"
 @interface MainViewController : BaseViewController<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;

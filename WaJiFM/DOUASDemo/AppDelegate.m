@@ -91,18 +91,16 @@
    _musicMenuColl = [[MusicTableViewMenuController alloc]init];
     
 
-    UINavigationController *leftNav = [[UINavigationController alloc]initWithRootViewController:_musicMenuColl];
+    BaseUINavigationController *leftNav = [[BaseUINavigationController alloc]initWithRootViewController:_musicMenuColl];
    
     
     _deckController =  [[IIViewDeckController alloc] initWithCenterViewController:mainNavigationController leftViewController:
                                              leftNav
                                                                                    rightViewController:nil];
-    //
 
 
-
-    
     self.window.rootViewController = _deckController;
+    
     
   
 }

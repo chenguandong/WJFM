@@ -27,6 +27,24 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+    
+    
+    //添加代码
+    if (IOS7)
+    {
+        self.edgesForExtendedLayout = UIRectEdgeAll;               //视图控制器，四条边不指定
+        self.extendedLayoutIncludesOpaqueBars = NO;
+        //不透明的操作栏<br>
+       
+        self.modalPresentationCapturesStatusBarAppearance = YES;
+        self.navigationController.navigationBar.barTintColor  = Default_Nav_Color;
+        self.navigationController.navigationBar.translucent = YES;
+    }else{
+        self.navigationController.navigationBar.tintColor = Default_Nav_Color;
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning

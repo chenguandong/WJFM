@@ -41,21 +41,20 @@ const int kPageSize = 10;
 
 @implementation ChannelTableViewController
 
+-(void)viewWillAppear:(BOOL)animated{
+
+    [super viewWillAppear:YES];
+
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
+    
     isFistLoad = YES;
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    
-   
-    
-    
+ 
+  
     
     _channelArray  = [NSMutableArray arrayWithCapacity:10];
     _allChannelArray =[NSArray array];
@@ -304,6 +303,9 @@ const int kPageSize = 10;
     
     [cell.musicLove setTag:indexPath.row];
     [cell.musicDownloadButton setTag:indexPath.row];
+    
+    cell.alpha = 0.5;
+    cell.backgroundColor = [UIColor clearColor];
     
     return cell;
 }
