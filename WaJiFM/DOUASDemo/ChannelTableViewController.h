@@ -21,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *headLoveButton;
 @property (weak, nonatomic) IBOutlet MarqueeLabel *headTitle;
 @property (strong, nonatomic) IBOutlet UIView *loadMoreView;
+@property (weak, nonatomic) IBOutlet UIImageView *headBgView;
 
 @property (weak, nonatomic) IBOutlet UIImageView *headImg;
     @property(nonatomic,strong)MusicMenuBean *albumInfo;

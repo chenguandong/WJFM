@@ -23,6 +23,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import "MyMPMoviePlayerViewController.h"
 #import "MJRefresh.h"
+#import "UIImageView+LBBlurredImage.h"
 
 #define kDownloadPath [NSString pathWithComponents:@[NSTemporaryDirectory(), @"multipleExample"]]
 const int kPageSize = 10;
@@ -50,6 +51,11 @@ const int kPageSize = 10;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    
+   
+    
+    
     
     _channelArray  = [NSMutableArray arrayWithCapacity:10];
     _allChannelArray =[NSArray array];
@@ -156,7 +162,25 @@ const int kPageSize = 10;
 }
 
 -(void)initHeadView{
-    [self.headImg  setImageWithURL:[NSURL URLWithString:_albumInfo.image] placeholderImage:[UIImage imageNamed:@"placeholder"]];
+  
+    
+    [self.headImg setImageWithURL:[NSURL URLWithString:_albumInfo.image] placeholderImage:[UIImage imageNamed:@"placeholder"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
+        
+        if (error==nil) {
+            [_headBgView setImageToBlur:self.headImg.image blurRadius:0.1 completionBlock:^{
+            }];
+        }else{
+            [_headBgView setImageToBlur:[UIImage imageNamed:@"Default"] completionBlock:^{
+                
+            }];
+        }
+    }];
+    
+    
+    
+    
+  
+    
    // self.headTitle.text  = _albumInfo.title;
    // self.headTitle.backgroundColor = [UIColor clearColor];
     self.title =_albumInfo.title;
